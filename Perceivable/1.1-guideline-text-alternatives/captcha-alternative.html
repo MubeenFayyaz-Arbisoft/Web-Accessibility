@@ -49,46 +49,124 @@
         </div>
         <h1 class="text-center white-color large-heading">Guideline 1.1/Captcha-Alternatives</h1>
       </div>
-      <div class="container-body" id="main-content">
-      <table border="1">
-        <caption>
-          using th as row and column headers will work.
-        </caption>
-        <tbody>
-          <tr>
-            <th>Quarter</th>
-            <th>Apples</th>
-            <th>Oranges</th>
-            <th>Bananas</th>
-          </tr>
-          <tr>
-            <th>Q1</th>
-            <td>100</td>
-            <td>200</td>
-            <td>250</td>
-          </tr>
-          <tr>
-            <th>Q2</th>
-            <td>120</td>
-            <td>180</td>
-            <td>230</td>
-          </tr>
-          <tr>
-            <th>Q3</th>
-            <td>110</td>
-            <td>120</td>
-            <td>210</td>
-          </tr>
-          <tr>
-            <th>Q4</th>
-            <td>140</td>
-            <td>150</td>
-            <td>300</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+      <div class="container-body">
+        <div>
+          <figure class="demo-figure">
+            <img
+              class="demo-img"
+              src="../../assets/images/speak_captcha.png"
+              alt="Image showing listening alternative option for written captcha words"
+            />
+            <figcaption>
+              <span class="material-symbols-outlined"> photo_camera </span> Fig:
+              Listening alternative option for written captcha image
+            </figcaption>
+          </figure>
+           <!-- code structure start -->
+           <div class="code-toolbar">
+            <pre
+              class="code-text"
+              id="text1">
+             <code class="language-css"><span class="highlight-line"><span class="token selector">CAPTCHA Usage in html</span>
+             <span class="token punctuation">{</span></span><span class="highlight-line">    
+             <span class="token property">    	      
+              &lt;!-- Image for captcha--&gt;
+                    &lt;img src="two pieces words.jpg" alt="captcha words"&gt;
+                    
+              &lt;!-- CAPTCHA input field --&gt;
+
+                     &lt;div class="captcha-container"&gt;
+                     &lt;label for="captcha-input" id="captcha-input-label"&gt;Type the two pieces of text:&lt;/label&gt;
+                     &lt;input type="text" id="captcha-input" name="captcha-input"class="captcha-input" aria-labelledby="captcha-input-label"required&gt;
+                     &lt;/div&gt;
+                
+              &lt;!-- Audio CAPTCHA --&gt;
+
+                    &lt;audio controls aria-labelledby="captcha-label"&gt;
+                    &lt;source src="captcha-audio.mp3" type="audio/mpeg"&gt;
+                        Your browser will speak the audio element.
+                        &lt;/audio&gt;
+                        &lt;/div&gt;
+                      </span>
+             </span><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+            <div class="toolbar">
+              <button class="copy-text-btn" type="button" data-target="text1">
+                Copy
+              </button>
+            </div>
+          </div>
+          <!-- code structure end -->
+        </div>
+        <div>
+          <figure class="demo-figure">
+            <img
+              class="demo-img"
+              src="../../assets/images/checkbox_alternative.png"
+              alt="Headphones listening alternative options for Captcha Image"
+            />
+            <figcaption>
+              <span class="material-symbols-outlined"> photo_camera </span> Fig:
+              Listening Alternative option for reCAPTCHA Checkbox
+            </figcaption>
+            <!-- code structure start -->
+           <div class="code-toolbar">
+            <pre
+              class="code-text"
+              id="text1"
+            ><code class="language-css"><span class="highlight-line"><span class="token selector">Listening option for image usage in html</span>
+             <span class="token punctuation">{</span></span><span class="highlight-line">    
+             <span class="token property">
+              &lt;&gt;
+          </span>
+             </span><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+            <div class="toolbar">
+              <button class="copy-text-btn" type="button" data-target="text1">
+                Copy
+              </button>
+            </div>
+          </div>
+          <!-- code structure end -->
+          </figure>
+        </div>
+        <div>
+          <figure class="demo-figure">
+            <img
+              class="demo-img"
+              src="../../assets/images/multipl_img_listen.png"
+              alt="Image showing Laces tying instructions as meaningful image"
+            />
+            <figcaption>
+              <span class="material-symbols-outlined"> photo_camera </span> Fig:
+              Multiple images checkbox; CAPTCHA listening alternative option
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <h3>Usage in HTML:</h3>
+          <p class="plain-text">
+            <h4>Explanation:</h4>
+            <br><b>Audio CAPTCHA (&lt;audio&gt; tag):</b>
+            <br>
+            The &lt;audio&gt; element allows users to listen to an audio CAPTCHA challenge.
+            The src="captcha-audio.mp3" points to the audio file that contains the CAPTCHA challenge.
+            <br>
+            You'll need to generate and store the audio file dynamically (more on this later) on your server.
+            <br>
+            The <b>controls</b> attribute enables the user to play, pause, and adjust the volume of the audio.
+            <br>
+            <h4>ARIA Labeling:</h4>
+            The aria-labelledby attribute on the &lt;audio&gt; element links the audio player
+            to the text instruction: "Please listen to the characters and enter them below."
+            <br>
+            The aria-labelledby attribute on the &lt;input&gt; field links the input field to its label
+            
+          <h3>Resourceful link:</h3>
+          <a href="https://accessibilite.public.lu/fr/rgaa4.1/criteres.html#crit-1-4
+          ">Digital Accessibility Portal- CAPTCHA text alternative</a>  
+          <a href="https://accessibilite.public.lu/fr/rgaa4.1/criteres.html#crit-1-5
+          ">Digital Accessibility Portal- CAPTCHA image alternative solution</a>  
     </main>
+
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
