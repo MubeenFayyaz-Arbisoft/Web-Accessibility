@@ -46,7 +46,7 @@
           class="text-start position-absolute"
           style="top: -10px; left: 40px"
         >
-          <a class="back-link" href="../../home.html"> Back Home</a>
+          <a class="back-link" href="../../home.html#list-type"> Back Home</a>
         </div>
         <h1 class="text-center white-color large-heading">List Type Demo</h1>
       </div>
@@ -59,11 +59,41 @@
               alt="Image showing structure for creating unordered list"
             />
             <figcaption>
-              <span class="material-symbols-outlined"> photo_camera </span> Fig:
+              <span class="material-symbols-outlined" aria-hidden="true"> photo_camera </span> Fig:
               ul list &lt;ul&gt;
             </figcaption>
           </figure>
         </div>
+        <div>
+          <h3>Usage of &lt;ul&gt; in HTML:</h3>
+          <p class="plain-text">
+            Unordered Lists (&lt;ul&gt;) are used for items that don't require a specific order,
+            typically marked with bullet points. 
+          </p>
+        
+          <!-- code structure start -->
+
+          <div class="code-toolbar">
+            <pre class="code-text" id="ul-demo-code">
+              <code class="language-css">
+                &lt;ul&gt;
+                  &lt;li&gt;Contents&lt;/li&gt;
+                  &lt;li&gt;Intro&lt;/li&gt;
+                  &lt;li&gt;Previous: Technique H46&lt;/li&gt;
+                  &lt;li&gt;Next: Technique H49&lt;/li&gt;
+                &lt;/ul&gt;
+              </code>
+            </pre>
+            <div class="toolbar">
+              <button class="copy-text-btn" type="button" data-target="ul-demo-code">
+                Copy
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <hr class="hr" aria-hidden="true">
+
         <div>
           <figure class="demo-figure">
             <img
@@ -72,11 +102,39 @@
               alt="Image showing structure for creating ordered list"
             />
             <figcaption>
-              <span class="material-symbols-outlined"> photo_camera </span> Fig:
+              <span class="material-symbols-outlined" aria-hidden="true"> photo_camera </span> Fig:
               ol list &lt;ol&gt;
             </figcaption>
           </figure>
         </div>
+
+        <div>
+          <h3>Usage of &lt;ol&gt; in HTML:</h3>
+          <p class="plain-text">Ordered Lists (&lt;ol&gt;) are used for items that have a specific sequence, typically numbered.</p>
+        
+          <!-- code structure start -->
+
+          <div class="code-toolbar">
+            <pre class="code-text" id="ol-demo-code">
+              <code class="language-css">
+                &lt;ol&gt;
+                  &lt;li&gt;Contents&lt;/li&gt;
+                  &lt;li&gt;Intro&lt;/li&gt;
+                  &lt;li&gt;Previous&lt;/li&gt;
+                  &lt;li&gt;Next&lt;/li&gt;
+                &lt;/ol&gt;
+              </code>
+            </pre>
+            <div class="toolbar">
+              <button class="copy-text-btn" type="button" data-target="ol-demo-code">
+                Copy
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <hr class="hr" aria-hidden="true">
+
         <div>
           <figure class="demo-figure">
             <img
@@ -91,42 +149,32 @@
           </figure>
         </div>
         <div>
-          <h3>Usage in HTML:</h3>
+          <h3>Usage of &lt;dl&gt; in HTML:</h3>
           <p class="plain-text">
-            There are 3 list types used for different purposes. Unordered Lists
-            (&lt;ul&gt;): Used for items that don't require a specific order,
-            typically marked with bullet points. Ordered Lists (&lt;ol&gt;):
-            Used for items that have a specific sequence, typically numbered.
             Description Lists (&lt;dl&gt;): Used for pairs of terms and
             descriptions, consisting of &lt;dt&gt; for the term and &lt;dd&gt;
-            for the description Indexing of each list should start from the
-            first element in the list and not from the type of the list.
+            for the description.
             <strong>Example:</strong> <br />
           </p>
           <!-- code structure start -->
           <div class="code-toolbar">
-            <pre
-              class="code-text"
-              id="text1"
-            ><code class="language-css"><span class="highlight-line"><span class="token selector">.testing2</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">    <span class="token property">outline</span><span class="token punctuation">:</span> 2px dashed #000<span class="token punctuation">;</span> <span class="token comment">/* this outline does not the minimum area requirement */</span>  </span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+            <pre class="code-text" id="dt-list-item">
+              <code class="language-css">
+                &lt;dl&gt;
+                  &lt;dt&gt;Coffee&lt;/dt&gt;
+                  &lt;dd&gt;Black Hot Drink&lt;/dd&gt;
+                  &lt;dt&gt;Milk&lt;/dt&gt;
+                  &lt;dd&gt;White Cold Drink&lt;/dd&gt;
+                &lt;/dl&gt;
+              </code>
+            </pre>
             <div class="toolbar">
-              <button class="copy-text-btn" type="button" data-target="text1">
+              <button class="copy-text-btn" type="button" data-target="dt-list-item">
                 Copy
               </button>
             </div>
           </div>
-          <!-- code structure start -->
-
-          <div class="code-toolbar">
-            <pre class="code-text" id="text2"><code class="language-css">
-              <span class="highlight-line"><span class="token selector">.element</span> <span class="token punctuation">{</span></span>
-                <br aria-hidden="true"><span class="highlight-line">    <span class="token property">outline</span><span class="token punctuation">:</span> 2px dashed #000<span class="token punctuation">;</span> <span class="token comment">/* this outline does not the minimum area requirement */</span>  </span><br aria-hidden="true"><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
-            <div class="toolbar">
-              <button class="copy-text-btn" type="button" data-target="text2">
-                Copy
-              </button>
-            </div>
-          </div>
+    
         </div>
       </div>
     </main>

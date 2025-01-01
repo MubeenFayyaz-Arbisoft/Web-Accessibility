@@ -202,6 +202,12 @@ a:hover, a:focus {
   border: 1px solid #25446b;
 }
 
+.hr {
+  height: 3px;
+  color: #000;
+  opacity: 1;
+}
+
 .formlabel {
   display: block;
   width: 100%;
