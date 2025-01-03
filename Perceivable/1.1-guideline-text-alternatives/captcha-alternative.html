@@ -62,15 +62,30 @@
               Listening alternative option for written captcha image
             </figcaption>
           </figure>
+
+          <h3>Usage of audio CAPTCHA in HTML:</h3>
+          <p class="plain-text">
+            <h4>Explanation:</h4>
+            <br><b>Audio CAPTCHA (&lt;audio&gt; tag):</b>
+            <br>
+            The &lt;audio&gt; element allows users to listen to an audio CAPTCHA challenge.
+            The src="captcha-audio.mp3" points to the audio file that contains the CAPTCHA challenge.
+            <br>
+            You'll need to generate and store the audio file dynamically (more on this later) on your server.
+            <br>
+            The <b>controls</b> attribute enables the user to play, pause, and adjust the volume of the audio.
+            <br>
+            <h4>ARIA Labeling:</h4>
+            The aria-labelledby attribute on the &lt;audio&gt; element links the audio player
+            to the text instruction: "Please listen to the characters and enter them below."
+            <br>
+            The aria-labelledby attribute on the &lt;input&gt; field links the input field to its label </p>
+
            <!-- code structure start -->
            <div class="code-toolbar">
-            <pre
-              class="code-text"
-              id="text1">
-             <code class="language-css"><span class="highlight-line"><span class="token selector">CAPTCHA Usage in html</span>
-             <span class="token punctuation">{</span></span><span class="highlight-line">    
-             <span class="token property">    	      
-              &lt;!-- Image for captcha--&gt;
+            <pre class="code-text" id="captcha-demo-code">
+              <code class="language-css">
+                &lt;!-- Image for captcha--&gt;
                     &lt;img src="two pieces words.jpg" alt="captcha words"&gt;
                     
               &lt;!-- CAPTCHA input field --&gt;
@@ -87,14 +102,14 @@
                         Your browser will speak the audio element.
                         &lt;/audio&gt;
                         &lt;/div&gt;
-                      </span>
-             </span><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+              </code>
+            </pre>
             <div class="toolbar">
-              <button class="copy-text-btn" type="button" data-target="text1">
+              <button class="copy-text-btn" type="button" data-target="captcha-demo-code">
                 Copy
               </button>
             </div>
-          </div>
+          </div> 
           <!-- code structure end -->
         </div>
         <div>
@@ -108,63 +123,50 @@
               <span class="material-symbols-outlined"> photo_camera </span> Fig:
               Listening Alternative option for reCAPTCHA Checkbox
             </figcaption>
+
+          </figure>
+
+            <h3>Usage of reCAPTCHA in HTML:</h3>
+            <p class="plain-text">
+              <h4>Explanation:</h4>
+              As Keyboard can focus on the checkbox and check it, the alternative is to
+              provide with an image along with an audio to speak out the written text. Which in result will help 
+              low vision people to hear the text written and overcome the CAPTCHA.
+            </p>
+
             <!-- code structure start -->
            <div class="code-toolbar">
-            <pre
-              class="code-text"
-              id="text1"
-            ><code class="language-css"><span class="highlight-line"><span class="token selector">Listening option for image usage in html</span>
-             <span class="token punctuation">{</span></span><span class="highlight-line">    
-             <span class="token property">
-              &lt;&gt;
-          </span>
-             </span><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+            <pre class="code-text" id="reCAPTCHA-image">
+              <code class="language-css">
+                &lt;&gt;     
+            </pre>
             <div class="toolbar">
-              <button class="copy-text-btn" type="button" data-target="text1">
+              <button class="copy-text-btn" type="button" data-target="reCAPTCHA-image">
                 Copy
               </button>
             </div>
           </div>
           <!-- code structure end -->
-          </figure>
-        </div>
-        <div>
-          <figure class="demo-figure">
-            <img
-              class="demo-img"
-              src="../../assets/images/multipl_img_listen.png"
-              alt="Image showing Laces tying instructions as meaningful image"
-            />
-            <figcaption>
-              <span class="material-symbols-outlined"> photo_camera </span> Fig:
-              Multiple images checkbox; CAPTCHA listening alternative option
-            </figcaption>
-          </figure>
-        </div>
-        <div>
-          <h3>Usage in HTML:</h3>
-          <p class="plain-text">
-            <h4>Explanation:</h4>
-            <br><b>Audio CAPTCHA (&lt;audio&gt; tag):</b>
-            <br>
-            The &lt;audio&gt; element allows users to listen to an audio CAPTCHA challenge.
-            The src="captcha-audio.mp3" points to the audio file that contains the CAPTCHA challenge.
-            <br>
-            You'll need to generate and store the audio file dynamically (more on this later) on your server.
-            <br>
-            The <b>controls</b> attribute enables the user to play, pause, and adjust the volume of the audio.
-            <br>
-            <h4>ARIA Labeling:</h4>
-            The aria-labelledby attribute on the &lt;audio&gt; element links the audio player
-            to the text instruction: "Please listen to the characters and enter them below."
-            <br>
-            The aria-labelledby attribute on the &lt;input&gt; field links the input field to its label
-            
+          <div>
+            <figure class="demo-figure">
+              <img
+                class="demo-img"
+                src="../../assets/images/multipl_img_listen.png"
+                alt="Image showing Laces tying instructions as meaningful image"
+              />
+              <figcaption>
+                <span class="material-symbols-outlined"> photo_camera </span> Fig:
+                Multiple images checkbox; CAPTCHA listening alternative option
+              </figcaption>
+            </figure>
+          </div>
+
           <h3>Resourceful link:</h3>
           <a href="https://accessibilite.public.lu/fr/rgaa4.1/criteres.html#crit-1-4
           ">Digital Accessibility Portal- CAPTCHA text alternative</a>  
           <a href="https://accessibilite.public.lu/fr/rgaa4.1/criteres.html#crit-1-5
           ">Digital Accessibility Portal- CAPTCHA image alternative solution</a>  
+
     </main>
 
     <script
