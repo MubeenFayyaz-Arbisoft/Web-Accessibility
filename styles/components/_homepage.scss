@@ -26,12 +26,11 @@ body {
 }
 .sidebar {
   top: 0;
-  background-color: $sidebar-bg;
   max-width: 280px;
   min-width: 280px;
   height: 100vh;
   position: fixed;
-  box-shadow: 0 0.46875rem 2.1875rem rgba(4, 9, 20, 0.03),
+  box-shadow: 0 0.46875rem 6px rgba(4, 9, 20, 0.03),
     0 0.9375rem 1.40625rem rgba(4, 9, 20, 0.03),
     0 0.25rem 0.53125rem rgba(4, 9, 20, 0.05),
     0 0.125rem 0.1875rem rgba(4, 9, 20, 0.03);
@@ -40,56 +39,7 @@ body {
   border-right: 1px solid #dddddd;
 }
 
-a.skip-content {
-  position: absolute;
-  top: -50px;
-  z-index: 1;
-  color: $primary-color;
-  opacity: 0;
-  &:focus {
-    opacity: 1;
-    top: 0;
-  }
-  &:focus-visible {
-    opacity: 1;
-  }
-  &:hover {
-    opacity: 1;
-  }
-}
-.content {
-  margin-left: 280px;
-}
-.link-action {
-  font-size: 1.6rem;
-}
 
-.pills {
-  background-color: $primary-color;
-  border: 1px solid #1c313a;
-  color: $white;
-  padding: 10px 15px;
-  font-size: 1.8rem;
-  border-radius: 4px;
-  display: inline-block;
-  &.round {
-    border-radius: 4px;
-    font-size: 1.4rem;
-    padding: 1px 8px;
-    background-color: $spindle;
-    color: $primary-color;
-    border: unset;
-  }
-}
-
-.pill-wrapper {
-  // position: absolute;
-  // top: -19px;
-  // left: -1px;
-  margin: 15px 0;
-  display: flex;
-  gap: 10px;
-}
 li.compliance-item {
   background-color: $secondary-color;
   border: 2px solid $primary-color;
@@ -109,15 +59,7 @@ a.compliance-link {
   padding: 10px 15px;
   border-radius: 2px;
 }
-.contianer-div {
-  max-width: 900px;
-  width: 100%;
-  text-align: center;
-  background-color: $primary-color;
-  margin: 0 auto;
-  padding: 50px 0;
-  border-radius: 20px 20px 0 0;
-}
+
 .main-content {
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
   max-width: 900px;
@@ -125,26 +67,8 @@ a.compliance-link {
   border-radius: 20px;
   margin: 50px auto;
 }
-.back-link {
-  background-color: $white;
-  color: $primary-color;
-  border-radius: 20px;
-  padding: 8px 15px;
-  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
-  &:focus {
-    outline: 1px dotted;
-    outline-offset: 2px;
-    outline-color: $secondary-color !important;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
-    background-color: $link-color;
-    color: $white;
-    padding: 8px 15px;
-    border-radius: 20px;
-  }
-}
-.container-body {
-  padding: 40px;
-}
+
+
 
 .button-card {
   -webkit-user-select: none;
@@ -178,31 +102,7 @@ a.compliance-link {
     padding: 9px 12px;
   }
 }
-a {
-  padding: 1px 6px;
-  &:focus {
-    outline: 2px dotted;
-    outline-offset: 2px;
-    outline-color: $link-color;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
-    color: $white !important;
-    border-radius: 4px;
-    background-color: $link-color;
-    padding: 1px 6px;
-    .small-icon {
-      &::before {
-        outline: 2px dotted;
-        outline-offset: 2px;
-        outline-color: $link-color;
-        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
-        color: $white !important;
-        border-radius: 4px;
-        background-color: $link-color;
-        padding: 1px 6px;
-      }
-    }
-  }
-}
+
 .small-icon {
   padding: 0;
   &::before {
@@ -231,12 +131,7 @@ a {
     border-radius: 4px;
   }
 }
-.top-bar {
-  border-radius: 8px 8px 0 0;
-  height: 6px;
-  width: 100%;
-  background-image: linear-gradient(-71deg, #4a6ee0, $secondary-color 95%);
-}
+
 .tool-image {
   width: 100%;
 }
@@ -270,12 +165,12 @@ a {
 }
 
 .demo-label {
-  color: $primary-color;
+  color: $white;
   margin-top: 12px;
   display: block;
   width: max-content;
-  background: $white;
-  border-radius: 10px 10px 0 0;
+  background: $primary-color;
+  border-radius: 6px 6px 0 0;
   padding: 5px 10px;
   font-size: 1.2rem;
   box-shadow: 0 0.46875rem 2.1875rem rgba(4, 9, 20, 0.03),
@@ -355,40 +250,7 @@ thead.thead-dark {
   font-size: 1.8rem;
   line-height: 28px;
 }
-.nav-pills {
-  background-color: #eee;
-  border-radius: 4px;
-  padding: 12px;
-  gap: 15px;
-  .nav-link {
-    padding: 10px 20px;
-    border: 2px solid transparent;
-    background-color: white;
-    color: $black;
-    border-radius: 4px;
-    width: 100%;
-    font-size: 2rem;
-    font-weight: 700;
-    &:hover {
-      background-color: $link-blue-color;
-      color: white;
-    }
-    &:focus {
-      outline: 2px dotted;
-      outline-offset: 2px;
-      outline-color: $link-color;
-      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
-      color: $white !important;
-    }
-  }
-  .nav-link.active {
-    background-color: $black;
-    border: 2px solid $primary-color;
-    &:hover {
-      background-color: $black;
-    }
-  }
-}
+
 li.nav-item {
   flex-grow: 1;
 }

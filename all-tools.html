@@ -3,379 +3,490 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Accessibility</title>
-      <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>All Tools | Arbi Digital Accessibility</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="styles/global.css" />
   </head>
   <body>
     <header class="internal-main-nav">
       <a href="#main-content" class="skip-content">Skip to main content</a>
-      <div class="nav-container internal-page-header">
-      <a href="home.html" class="logo">
-        <img class="logo__image" src="assets/images/accessibility-logo.svg" alt="logo">
-      </a>
-      <nav>
-        <ul>
-          <li>
-            <a  href="about-us.html"> About Us</a>
-          </li>
-          <li>
-            <a class="active" href="all-tools.html">All Tools</a>
-          </li>
-          <li>
-            <a href="best-reference-links.html">Best Reference Links</a>
-          </li>
-          <li>
-            <a href="our-certfications.html">Our Certifications</a>
-          </li>
-          <li>
-            <a  href="support.html">Support</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    </header>
-    <main class="main-content"id="scroll-top">
-      <div class="text-center contianer-div position-relative">
-        <div
-          class="text-start position-absolute"
-          style="top: -10px; left: 40px"
-        >
-          <a
-            class="back-link"
-            href="home.html"
-          >
-            Back Home</a
-          >
-        </div>
-        <h1 class="text-center white-color large-heading">
-          Web Accessibility Tools
-        </h1>
+      <div class="nav-container ">
+        <nav>
+          <ul>
+            <li>
+              <a href="our-goals.html"> Our Goals</a>
+            </li>
+            <li>
+              <a href="https://arbisoft.com/about" target="_blank"> About Us</a>
+            </li>
+            <li>
+              <a class="active" href="all-tools.html">All Tools</a>
+            </li>
+            <li>
+              <a href="our-certfications.html">Our Certifications</a>
+            </li>
+            <li>
+              <a href="support.html">Our Support</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div class="container-body" id="main-content">
-        <h2 class="pills">For Web</h2>
-        <div class="card-container row">
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="top-bar"></div>
-              <div class="content-card">
-                <div class="title">Andi</div>
-                <div class="description">
-                  Accessible Name & Description Inspector (ANDI) tool, a web
-                  accessibility inspection tool, which performs single page
-                  testing to automatically detect accessibility issues.
+    </header>
+    <main class="d-flex flex-nowrap gap-3 align-items-stretch">
+      <aside class="p-4 d-flex flex-column sidebar">
+        <div class="flex-shrink-0">
+          <a
+            aria-label="Home Page"
+            href="home.html"
+            class="logo d-flex align-items-center mb-2 gap-2 white-color text-decoration-none"
+          >
+            <img
+              src="../../assets/images/accessibility-logo.svg"
+              class="logo__image"
+              alt="logo"
+            />
+          </a>
+          <span class="demo-label">Demo Resources</span>
+          <div class="accordion" id="menu-sidebar">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Table Components
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#menu-sidebar"
+              >
+                <div class="accordion-body">
+                  <a
+                    href="./Perceivable/1.3-Adaptable/cell-header-association.html"
+                    class="font-weight-bold link-action red-color"
+                    >Table Cell Header Association</a
+                  >
                 </div>
               </div>
-              <a
-                href="https://www.ssa.gov/accessibility/andi/help/install.html"
-                target="_blank"
-                class="button-card"
-              >
-                Andi Download
-              </a>
             </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="top-bar"></div>
-              <div class="content-card">
-                <div class="title">Color Contrast Analyzer</div>
-                <div class="description">
-                  The Color Contrast Analyzer is a feature in Accessibility
-                  Insights for Windows that helps developers investigate
-                  contrast ratios
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Images Components
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#menu-sidebar"
+              >
+                <div class="accordion-body">
+                  <a
+                    href="./Perceivable/1.3-Adaptable/cell-header-association.html"
+                    class="font-weight-bold link-action red-color"
+                    >Table Cell Header Association</a
+                  >
                 </div>
               </div>
-              <a
-                href="https://www.tpgi.com/color-contrast-checker/"
-                target="_blank"
-                class="button-card"
-              >
-                CCA Download
-              </a>
             </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="top-bar"></div>
-              <div class="content-card">
-                <div class="title">Mac's Voiceover</div>
-                <div class="description">
-                  VoiceOver is a screen reader built into Apple Inc. VoiceOver
-                  gives audible descriptions of what's on your screen. Shortcut
-                  key <br />
-                  <strong> Command + fn + F5</strong>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Best Reference Links
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#menu-sidebar"
+              >
+                <div class="accordion-body">
+                  <a
+                    href="https://www.magentaa11y.com/web/"
+                    class="font-weight-bold link-action red-color"
+                    target="_blank"
+                    >Magentaa11y</a
+                  >
                 </div>
               </div>
-              <a
-                href="https://accessibilityresources.org/about-accessibility/screen-reader-commands/item/188-voiceover"
-                class="button-card"
-              >
-                Voiceover Shortcut keys
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="top-bar"></div>
-              <div class="content-card">
-                <div class="title">Window's Narrator</div>
-                <div class="description">
-                  Narrator lets you use your PC without a mouse to complete
-                  common tasks if you’re blind or have low vision. It reads and
-                  interacts with things on the screen.
-                  <strong> Window + Ctrl + Enter</strong>
-                </div>
-              </div>
-              <a
-                href="https://support.microsoft.com/en-us/windows/chapter-1-introducing-narrator-7fe8fd72-541f-4536-7658-bfc37ddaf9c6"
-                class="button-card"
-              >
-                Window's Download
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="top-bar"></div>
-              <div class="content-card">
-                <div class="title">JAWS</div>
-                <div class="description">
-                  JAWS (Job Access With Speech) is a screen reader designed to
-                  assist visually impaired users by converting text on a
-                  computer screen into synthesized speech.
-                </div>
-              </div>
-              <a
-                href="https://support.freedomscientific.com/Downloads/JAWS"
-                target="_blank"
-                class="button-card"
-              >
-                JAWS Download
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="top-bar"></div>
-              <div class="content-card">
-                <div class="title">Magnifier</div>
-                <div class="description">
-                  The Magnifier tool enhances screen content by enlarging text
-                  and images, making it easier for users with visual impairments
-                  to access information.
-                </div>
-              </div>
-              <a
-                href="https://chromewebstore.google.com/detail/magnifying-glass-hover-zo/gfcbebjdigncefnokoncehghgfndjcgn?hl=en"
-                target="_blank"
-                class="button-card"
-              >
-                Magnifier Download
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="top-bar"></div>
-              <div class="content-card">
-                <div class="title">Text Spacing Editor</div>
-                <div class="description">
-                  The Text Spacing Editor tool adjusts letter spacing, word
-                  spacing, and line height to improve readability for users with
-                  dyslexia or other reading difficulties.
-                </div>
-              </div>
-              <a
-                href="https://chromewebstore.google.com/detail/text-spacing-editor/amnelgbfbdlfjeaobejkfmjjnmeddaoj?hl=en"
-                class="button-card"
-              >
-                Text Spacing Download
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="top-bar"></div>
-              <div class="content-card">
-                <div class="title">Wave</div>
-                <div class="description">
-                  The WAVE tool evaluates web accessibility by identifying
-                  issues such as missing alt text, contrast issues, improper
-                  heading structures and more.
-                </div>
-              </div>
-              <a
-                href="https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh"
-                class="button-card"
-              >
-                Wave Download
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="top-bar"></div>
-              <div class="content-card">
-                <div class="title">ARC Toolkit</div>
-                <div class="description">
-                  The ARC Toolkit is a comprehensive suite for assessing and
-                  improving web accessibility, offering automated and manual
-                  testing tools. It provides actionable insights and reports
-                </div>
-              </div>
-              <a
-                href="https://chromewebstore.google.com/detail/arc-toolkit/chdkkkccnlfncngelccgbgfmjebmkmce"
-                target="_blank"
-                class="button-card"
-              >
-                ARC Toolkit Download
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="top-bar"></div>
-              <div class="content-card">
-                <div class="title">Google Lighthouse</div>
-                <div class="description">
-                  Lighthouse audits web pages for performance, SEO, and
-                  accessibility, generating detailed reports on best practices.
-                  Its accessibility checks help developers identify and fix
-                  issues.
-                </div>
-              </div>
-              <a
-                href="https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk"
-                target="_blank"
-                class="button-card"
-              >
-                Lighthouse Download
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="top-bar"></div>
-              <div class="content-card">
-                <div class="title">AXE</div>
-                <div class="description">
-                  The AXE tool is a accessibility testing solution that allows
-                  for automated and manual checks. It identifies potential
-                  accessibility violations.
-                </div>
-              </div>
-              <a
-                href="https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd"
-                class="button-card"
-              >
-                AXE Download
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="top-bar"></div>
-              <div class="content-card">
-                <div class="title">Web Developer Tool</div>
-                <div class="description">
-                  The Web Developer tool is a browser extension that aids in
-                  assessing website accessibility by offering features to
-                  inspect elements, check alt text, and modify styles.
-                </div>
-              </div>
-
-              <a
-                href="https://chromewebstore.google.com/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm"
-                class="button-card"
-              >
-                Developer Tool Download
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="top-bar"></div>
-              <div class="content-card">
-                <div class="title">Read Aloud</div>
-                <div class="description">
-                  The Read Aloud tool enhances accessibility by converting
-                  written text into spoken words, making content more accessible
-                  for users with visual impairments or reading difficulties.
-                </div>
-              </div>
-              <a
-                href="https://chromewebstore.google.com/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp"
-                target="_blank"
-                class="button-card"
-              >
-                Read Aloud Download
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="top-bar"></div>
-              <div class="content-card">
-                <div class="title" style="font-size: 19px">
-                  A11y HTML5 Validator
-                </div>
-                <div class="description">
-                  The A11y HTML5 Validator checks web pages for accessibility
-                  compliance with HTML5 standards, identifying issues that may
-                  hinder usability for individuals with disabilities.
-                </div>
-              </div>
-              <a
-                href="https://chromewebstore.google.com/detail/a11y-html5-validator/cfgfmngpbhlaagbfjhellojpcpcjmnkl"
-                target="_blank"
-                class="button-card"
-              >
-                Install HTML5 Validator
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="top-bar"></div>
-              <div class="content-card">
-                <div class="title">BrowserStack Toolkit</div>
-                <div class="description">
-                  BrowserStack is a cross-browser testing tool that allows
-                  developers to check website accessibility across various
-                  devices and browsers.
-                </div>
-              </div>
-              <a
-                href="https://chromewebstore.google.com/detail/browserstack-accessibilit/fmkhjeeeojocenbconhndpiohohajokn"
-                class="button-card"
-              >
-                BrowserStack Download
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="top-bar"></div>
-              <div class="content-card">
-                <div class="title">AChecker+</div>
-                <div class="description">
-                  Achecker+ is an online tool designed to evaluate web
-                  accessibility, helping developers identify and fix issues to
-                  ensure compliance with accessibility standards.
-                </div>
-              </div>
-              <a
-                href="https://achecks.org/achecker/#google_vignette"
-                class="button-card"
-              >
-                AChecker+ Tool
-              </a>
             </div>
           </div>
         </div>
-        <div class="bottom-list">
-          <a href="#scroll-top"><span class="material-symbols-outlined">arrow_circle_up</span>Scroll Up</a>
+        <div class="footer-link mt-auto text-center">
+          <a href=" best-reference-links.html" class="blue-color"
+            >Best Reference Links</a
+          >
+        </div>
+      </aside>
+      <div class="content" id="scroll-top">
+        <div>
+          <div class="text-center contianer-div position-relative mb-5">
+            <div class="text-start position-absolute top-10">
+              <a class="back-link" href="home.html"> Back Home</a>
+            </div>
+            <h1 class="text-center dark-color large-heading d-flex lh-1 justify-content-center" aria-label="Web Accessibility Tools For Web">
+            <span aria-hidden="true" class="d-flex align-items-center gap-4">  Web Accessibility Tools<span class="pills">For Web</span></span>
+            </h1>
+          </div>
+
+          <div class="container-body" id="main-content">
+   
+            <div class="card-container row">
+              <div class="col-sm-4">
+                <div class="card newCard">
+                  <div class="top-bar"></div>
+                  <div class="content-card">
+                    <div class="title">Andi</div>
+                    <div class="description">
+                      Accessible Name & Description Inspector (ANDI) tool, a web
+                      accessibility inspection tool, which performs single page
+                      testing to automatically detect accessibility issues.
+                    </div>
+                  </div>
+                  <a
+                    href="https://www.ssa.gov/accessibility/andi/help/install.html"
+                    target="_blank"
+                    class="button-card"
+                  >
+                    Andi Download
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card newCard">
+                  <div class="top-bar"></div>
+                  <div class="content-card">
+                    <div class="title">Color Contrast Analyzer</div>
+                    <div class="description">
+                      The Color Contrast Analyzer is a feature in Accessibility
+                      Insights for Windows that helps developers investigate
+                      contrast ratios
+                    </div>
+                  </div>
+                  <a
+                    href="https://www.tpgi.com/color-contrast-checker/"
+                    target="_blank"
+                    class="button-card"
+                  >
+                    CCA Download
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card newCard">
+                  <div class="top-bar"></div>
+                  <div class="content-card">
+                    <div class="title">Mac's Voiceover</div>
+                    <div class="description">
+                      VoiceOver is a screen reader built into Apple Inc.
+                      VoiceOver gives audible descriptions of what's on your
+                      screen. Shortcut key <br />
+                      <strong> Command + fn + F5</strong>
+                    </div>
+                  </div>
+                  <a
+                    href="https://accessibilityresources.org/about-accessibility/screen-reader-commands/item/188-voiceover"
+                    class="button-card"
+                  >
+                    Voiceover Shortcut keys
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card newCard">
+                  <div class="top-bar"></div>
+                  <div class="content-card">
+                    <div class="title">Window's Narrator</div>
+                    <div class="description">
+                      Narrator lets you use your PC without a mouse to complete
+                      common tasks if you’re blind or have low vision. It reads
+                      and interacts with things on the screen.
+                      <strong> Window + Ctrl + Enter</strong>
+                    </div>
+                  </div>
+                  <a
+                    href="https://support.microsoft.com/en-us/windows/chapter-1-introducing-narrator-7fe8fd72-541f-4536-7658-bfc37ddaf9c6"
+                    class="button-card"
+                  >
+                    Window's Download
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card newCard">
+                  <div class="top-bar"></div>
+                  <div class="content-card">
+                    <div class="title">JAWS</div>
+                    <div class="description">
+                      JAWS (Job Access With Speech) is a screen reader designed
+                      to assist visually impaired users by converting text on a
+                      computer screen into synthesized speech.
+                    </div>
+                  </div>
+                  <a
+                    href="https://support.freedomscientific.com/Downloads/JAWS"
+                    target="_blank"
+                    class="button-card"
+                  >
+                    JAWS Download
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card newCard">
+                  <div class="top-bar"></div>
+                  <div class="content-card">
+                    <div class="title">Magnifier</div>
+                    <div class="description">
+                      The Magnifier tool enhances screen content by enlarging
+                      text and images, making it easier for users with visual
+                      impairments to access information.
+                    </div>
+                  </div>
+                  <a
+                    href="https://chromewebstore.google.com/detail/magnifying-glass-hover-zo/gfcbebjdigncefnokoncehghgfndjcgn?hl=en"
+                    target="_blank"
+                    class="button-card"
+                  >
+                    Magnifier Download
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card newCard">
+                  <div class="top-bar"></div>
+                  <div class="content-card">
+                    <div class="title">Text Spacing Editor</div>
+                    <div class="description">
+                      The Text Spacing Editor tool adjusts letter spacing, word
+                      spacing, and line height to improve readability for users
+                      with dyslexia or other reading difficulties.
+                    </div>
+                  </div>
+                  <a
+                    href="https://chromewebstore.google.com/detail/text-spacing-editor/amnelgbfbdlfjeaobejkfmjjnmeddaoj?hl=en"
+                    class="button-card"
+                  >
+                    Text Spacing Download
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card newCard">
+                  <div class="top-bar"></div>
+                  <div class="content-card">
+                    <div class="title">Wave</div>
+                    <div class="description">
+                      The WAVE tool evaluates web accessibility by identifying
+                      issues such as missing alt text, contrast issues, improper
+                      heading structures and more.
+                    </div>
+                  </div>
+                  <a
+                    href="https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh"
+                    class="button-card"
+                  >
+                    Wave Download
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card newCard">
+                  <div class="top-bar"></div>
+                  <div class="content-card">
+                    <div class="title">ARC Toolkit</div>
+                    <div class="description">
+                      The ARC Toolkit is a comprehensive suite for assessing and
+                      improving web accessibility, offering automated and manual
+                      testing tools. It provides actionable insights and reports
+                    </div>
+                  </div>
+                  <a
+                    href="https://chromewebstore.google.com/detail/arc-toolkit/chdkkkccnlfncngelccgbgfmjebmkmce"
+                    target="_blank"
+                    class="button-card"
+                  >
+                    ARC Toolkit Download
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card newCard">
+                  <div class="top-bar"></div>
+                  <div class="content-card">
+                    <div class="title">Google Lighthouse</div>
+                    <div class="description">
+                      Lighthouse audits web pages for performance, SEO, and
+                      accessibility, generating detailed reports on best
+                      practices. Its accessibility checks help developers
+                      identify and fix issues.
+                    </div>
+                  </div>
+                  <a
+                    href="https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk"
+                    target="_blank"
+                    class="button-card"
+                  >
+                    Lighthouse Download
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card newCard">
+                  <div class="top-bar"></div>
+                  <div class="content-card">
+                    <div class="title">AXE</div>
+                    <div class="description">
+                      The AXE tool is a accessibility testing solution that
+                      allows for automated and manual checks. It identifies
+                      potential accessibility violations.
+                    </div>
+                  </div>
+                  <a
+                    href="https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd"
+                    class="button-card"
+                  >
+                    AXE Download
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card newCard">
+                  <div class="top-bar"></div>
+                  <div class="content-card">
+                    <div class="title">Web Developer Tool</div>
+                    <div class="description">
+                      The Web Developer tool is a browser extension that aids in
+                      assessing website accessibility by offering features to
+                      inspect elements, check alt text, and modify styles.
+                    </div>
+                  </div>
+
+                  <a
+                    href="https://chromewebstore.google.com/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm"
+                    class="button-card"
+                  >
+                    Developer Tool Download
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card newCard">
+                  <div class="top-bar"></div>
+                  <div class="content-card">
+                    <div class="title">Read Aloud</div>
+                    <div class="description">
+                      The Read Aloud tool enhances accessibility by converting
+                      written text into spoken words, making content more
+                      accessible for users with visual impairments or reading
+                      difficulties.
+                    </div>
+                  </div>
+                  <a
+                    href="https://chromewebstore.google.com/detail/read-aloud-a-text-to-spee/hdhinadidafjejdhmfkjgnolgimiaplp"
+                    target="_blank"
+                    class="button-card"
+                  >
+                    Read Aloud Download
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card newCard">
+                  <div class="top-bar"></div>
+                  <div class="content-card">
+                    <div class="title" style="font-size: 19px">
+                      A11y HTML5 Validator
+                    </div>
+                    <div class="description">
+                      The A11y HTML5 Validator checks web pages for
+                      accessibility compliance with HTML5 standards, identifying
+                      issues that may hinder usability for individuals with
+                      disabilities.
+                    </div>
+                  </div>
+                  <a
+                    href="https://chromewebstore.google.com/detail/a11y-html5-validator/cfgfmngpbhlaagbfjhellojpcpcjmnkl"
+                    target="_blank"
+                    class="button-card"
+                  >
+                    Install HTML5 Validator
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card newCard">
+                  <div class="top-bar"></div>
+                  <div class="content-card">
+                    <div class="title">BrowserStack Toolkit</div>
+                    <div class="description">
+                      BrowserStack is a cross-browser testing tool that allows
+                      developers to check website accessibility across various
+                      devices and browsers.
+                    </div>
+                  </div>
+                  <a
+                    href="https://chromewebstore.google.com/detail/browserstack-accessibilit/fmkhjeeeojocenbconhndpiohohajokn"
+                    class="button-card"
+                  >
+                    BrowserStack Download
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="card newCard">
+                  <div class="top-bar"></div>
+                  <div class="content-card">
+                    <div class="title">AChecker+</div>
+                    <div class="description">
+                      Achecker+ is an online tool designed to evaluate web
+                      accessibility, helping developers identify and fix issues
+                      to ensure compliance with accessibility standards.
+                    </div>
+                  </div>
+                  <a
+                    href="https://achecks.org/achecker/#google_vignette"
+                    class="button-card"
+                  >
+                    AChecker+ Tool
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-list">
+              <a href="#scroll-top"
+                ><span class="material-symbols-outlined">arrow_circle_up</span
+                >Scroll Up</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </main>
