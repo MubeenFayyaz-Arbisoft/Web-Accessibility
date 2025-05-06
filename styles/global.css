@@ -160,6 +160,7 @@ a.skip-content:hover {
   margin-top: 15px;
   gap: 10px;
   justify-content: center;
+  border: 0;
 }
 .card .content-card .nav-pills li.nav-item {
   flex-grow: unset;
