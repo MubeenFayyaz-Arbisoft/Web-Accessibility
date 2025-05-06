@@ -1,13 +1,9 @@
 @import "../variables/colors";
 
 .internal-main-nav {
-  box-shadow: inset 0 -7px #cdcccc, 1px 20px 0px 0 #dae4ee24;
-  background-color: $sidebar-bg;
+  margin-left: 280px;
+  box-shadow: 0 0.46875rem 6px rgba(4, 9, 20, 0.03), 0 0.9375rem 1.40625rem rgba(4, 9, 20, 0.03), 0 0.25rem 0.53125rem rgba(4, 9, 20, 0.05), 0 0.125rem 0.1875rem rgba(4, 9, 20, 0.03);
   padding: 15px;
-  // position: fixed;
-  width: 100%;
-  // top: 0;
-  // z-index: 1;
   .logo {
     &__image {
       width: 180px;
@@ -41,22 +37,25 @@
         list-style: none;
         a {
           text-decoration: none;
-          color: $white;
-          font-size: 1.7rem;
+          color:  $primary-color;
+          font-size: 1.6rem;
           font-weight: 500;
-          background: $primary-color;
-          border-radius: 4px;
           letter-spacing: 0.6px;
+          line-height: 26px;
+          border: 1px solid  $primary-color;
+          background-color: $porcelain;
           &:hover,
           &:focus {
             background-color: $link-color;
             text-decoration: none;
+            color: $white;
           }
           &.active {
             background-color: $link-color;
             outline: 2px dotted;
             outline-offset: 2px;
             outline-color: $link-color;
+            color: $white;
           }
         }
       }

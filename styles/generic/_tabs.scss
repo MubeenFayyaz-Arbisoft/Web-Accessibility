@@ -1,0 +1,17 @@
+// tab 1
+
+#perceivable-accordion, #operable-accordion, #understandable-accordion, #robust-accordion {
+  .accordion-item {
+    border: 1px solid $shakespeare !important;
+    margin-bottom: 20px;
+    border-radius: 0 !important;
+    background-color: $polar !important;
+  }
+  .accordion-button {
+    padding: 20px;
+    background-color: $polar !important;
+    &:focus{
+      border-radius: 0 !important;
+    }
+  }
+}

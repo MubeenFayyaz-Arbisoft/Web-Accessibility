@@ -9,15 +9,52 @@ body {
 }
 
 a {
-  letter-spacing: 0.4px;
-  display: inline-block;
-  font-size: 1.7rem;
-  font-weight: 600;
-  text-decoration: underline;
-  &:hover,
+  padding: 1px 6px;
   &:focus {
+    outline: 2px dotted;
+    outline-offset: 2px;
+    outline-color: $link-color;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+    color: $white !important;
+    background-color: $link-color;
+    padding: 1px 6px;
     text-decoration: none;
+    .small-icon {
+      &::before {
+        outline: 2px dotted;
+        outline-offset: 2px;
+        outline-color: $link-color;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+        color: $white !important;
+        border-radius: 4px;
+        background-color: $link-color;
+        padding: 1px 6px;
+      }
+    }
   }
+}
+
+a.skip-content {
+  position: absolute;
+  top: -60px;
+  z-index: 1;
+  color: $primary-color;
+  opacity: 0;
+  text-decoration: none;
+  &:focus {
+    opacity: 1;
+    top: 8px;
+  }
+  &:focus-visible {
+    opacity: 1;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.link-action {
+  font-size: 1.6rem;
 }
 
 .white-color {
@@ -76,7 +113,7 @@ a {
   background-image: none;
   background-color: $black;
   -webkit-text-fill-color: unset;
-  margin: 30px 0 14px 0;
+  margin: 15px 0;
   a {
     color: $link-blue-color;
     display: flex;
@@ -86,6 +123,12 @@ a {
 }
 
 // carousel card design
+.top-bar {
+  border-radius: 2px 2px 0 0;
+  height: 6px;
+  width: 100%;
+  background-image: linear-gradient(-71deg, #4a6ee0, $secondary-color 95%);
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -93,10 +136,16 @@ a {
   justify-content: space-around;
   text-align: center;
   position: relative;
-  border-radius: 10px;
-  box-shadow: 0 10px 15px -3px rgb(100 58 152 / 17%),
-    0 4px 6px -4px rgb(100 58 152 / 0%);
+  border-radius: 4px;
   margin-bottom: 30px;
+  &.newCard{
+padding-bottom: 30px;
+  }
+  .card-icon {
+    span {
+      font-size: 80px;
+    }
+  }
   .content-card {
     padding: 10px;
     min-height: 220px;
@@ -159,7 +208,8 @@ a {
 }
 .code-toolbar {
   position: relative;
-
+  border: 1px solid $iron-color;
+  border-radius: 4px;
   .toolbar {
     position: absolute;
     top: 0.5em;
@@ -167,38 +217,53 @@ a {
     transition: opacity 0.3s ease-in-out;
     .copy-text-btn {
       border: none;
-      color: $white;
+      color: black;
       text-transform: uppercase;
       font-weight: 500;
       font-size: 1.4rem;
       letter-spacing: 0.5px;
       padding: 5px 12px;
-      background-color: $button-bg;
+      background-color:$shakespeare;
       border-radius: 4px;
+      &:focus {
+        outline: 1px dotted;
+        outline-offset: 2px;
+        outline-color: $secondary-color !important;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+        background-color: $link-color;
+        color: $white;
+        padding: 5px 12px;
+        border-radius: 4px;
+      }
     }
   }
 
   .code-text {
-    padding: 1.5rem;
-    background-color: $light-gray;
-    border-radius: 10px;
     color: $black;
     width: 100%;
-    margin: 20px auto;
-    max-width: 800px;
+    padding: 30px;
+    .language-css {
+      white-space: normal;
+    }
+  }
+  .code-heading {
+    background-color: $porcelain;
+    border-bottom: 1px solid $iron-color;
+    padding: 1.5rem;
   }
 }
 
 .demo-figure {
   .demo-img {
-    border-radius: 10px;
+    border-radius: 4px 4px 0 0;
+    padding: 15px;
     width: 100%;
-    height: 400px;
+    height: 250px;
+    -o-object-fit: contain;
     object-fit: contain;
-    margin: 15px auto;
-    display: block;
-
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 15%);
+    margin-top: 15px;
+    border: 1px solid $iron-color;
+    border-bottom: 0;
   }
   figcaption {
     font-size: 16px;
@@ -207,19 +272,142 @@ a {
     align-items: center;
     gap: 5px;
     justify-content: center;
-    background-color: $light-gray;
-    border-radius: 4px;
-    padding: 5px;
+    background-color: $porcelain;
+    border-radius: 0 0 4px 4px;
+    padding: 10px;
     width: 100%;
-    margin: 0 auto;
-    max-width: 800px;
-    border: 1px solid $border-color;
+    margin-bottom: 15px;
+    border: 1px solid $iron-color;
   }
 }
-
 
 .hr {
   height: 3px;
   color: $black;
   opacity: 1;
+}
+.importantNote {
+  border: 1px solid $iron-color;
+  border-left: 4px solid $iron-color;
+  background: $porcelain;
+  padding: 14px;
+  margin-bottom: 20px;
+}
+// inner page container
+.contianer-div {
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.container-body {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.content {
+  margin-left: 280px;
+  margin-top: 20px;
+  width: 100%;
+}
+.top-10{
+  top: 10px;
+}
+// accordion arrow mokve
+
+.accordion-button::before {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 1rem;
+  content: "";
+  background-image: var(--bs-accordion-btn-active-icon);
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button::after {
+  display: none !important;
+}
+
+// back link inner page
+
+.back-link {
+  background-color: $white;
+  color: black;
+  border-radius: 4px;
+  padding: 8px 15px;
+  border: 1px solid #dadde1;
+  background-color: $shakespeare;
+  &:focus {
+    outline: 1px dotted;
+    outline-offset: 2px;
+    outline-color: $secondary-color !important;
+    border: 1px solid #dadde1;
+    background-color: $link-color;
+    color: $white;
+    padding: 8px 15px;
+    border-radius: 4px;
+  }
+}
+
+// nav tabs pills
+.nav-pills {
+  background-color: $porcelain;
+  padding: 12px;
+  gap: 15px;
+  border: 1px solid $iron-color;
+  .nav-link {
+    padding: 10px 20px;
+    border: 1px solid $iron-color;
+    background-color: white;
+    color: $black;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 0;
+    &:hover {
+      background-color: $link-blue-color;
+      color: white;
+    }
+    &:focus {
+      outline: 2px dotted;
+      outline-offset: 2px;
+      outline-color: $link-color;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12);
+      color: $white !important;
+    }
+  }
+  .nav-link.active {
+    background-color: $black;
+    &:hover {
+      background-color: $black;
+    }
+  }
+}
+
+// home page pills
+.pills {
+  background-color: $primary-color;
+  border: 1px solid #1c313a;
+  color: $white;
+  padding: 10px 15px;
+  font-size: 1.8rem;
+  border-radius: 4px;
+  display: inline-block;
+  &.round {
+    border-radius: 4px;
+    font-size: 1.4rem;
+    padding: 1px 8px;
+    background-color: $spindle;
+    color: $primary-color;
+    border: unset;
+  }
+}
+
+.pill-wrapper {
+  margin: 15px 0;
+  display: flex;
+  gap: 10px;
 }

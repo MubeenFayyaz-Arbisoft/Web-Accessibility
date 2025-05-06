@@ -4,38 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Accessibility</title>
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="styles/global.css" />
+    <style></style>
   </head>
   <body>
     <header class="internal-main-nav">
       <a href="#main-content" class="skip-content">Skip to main content</a>
-      <div class="nav-container ">
-     
-      <nav>
-        <ul>
-          <li>
-            <a  href="about-us.html"> About Us</a>
-          </li>
-          <li>
-            <a  href="all-tools.html">All Tools</a>
-          </li>
-          <li>
-            <a href="our-certfications.html">Our Certifications</a>
-          </li>
-          <li>
-            <a  href="support.html">Our Support</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+      <div class="nav-container">
+        <nav>
+          <ul>
+            <li>
+              <a href="our-goals.html">Our Goals</a>
+            </li>
+            <li>
+              <a href="https://arbisoft.com/about" target="_blank"> About Us</a>
+            </li>
+            <li>
+              <a href="all-tools.html">All Tools</a>
+            </li>
+            <li>
+              <a href="our-certfications.html">Our Certifications</a>
+            </li>
+            <li>
+              <a href="support.html">Our Support</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="d-flex flex-nowrap gap-3 align-items-stretch">
-
       <aside class="p-4 d-flex flex-column sidebar">
         <div class="flex-shrink-0">
           <a
-          aria-label="Home Page"
+            aria-label="Home Page"
             href="home.html"
             class="logo d-flex align-items-center mb-2 gap-2 white-color text-decoration-none"
           >
@@ -135,61 +141,62 @@
           </div>
         </div>
         <div class="footer-link mt-auto text-center">
-          <a
-          href=" best-reference-links.html"
-            class="blue-color"
+          <a href=" best-reference-links.html" class="blue-color"
             >Best Reference Links</a
           >
         </div>
       </aside>
       <div class="content" id="scroll-top">
-        <div class="inner-main p-5 pt-4">
-          <section class="w-100">
-            <h1 class="main-heading ">
-              Accessibility in HTML with Examples & Best Practices
-            </h1>
-            <h2 class="sub-title">Purpose</h2>
-            <p class="plain-text mb-0">
-              Web accessibility is guided by four key principles:
-              <strong>
-                Perceivable, Operable, Understandable, and Robust.</strong
-              >
-              These principles ensure that all users, regardless of their
-              abilities or disabilities, can access and interact with online
-              content effectively. The purpose of the document "Accessibility in
-              HTML with Examples and Best Practices" is to guide developers and
-              content creators in designing accessible HTML components. It
-              provides practical examples and best practices to ensure digital
-              content is usable by everyone.
-            </p>
-            <div class="d-flex gap-2 align-items-center" id="main-content">
-              <h2 class="sub-title">Web Compliance</h2>
-              <a
-                class="font-weight-bold demo-links"
-                style="margin-top: 20px;"
-                href="highest-lowest-priority.html"
-                >WCAG 2.2 AA Guidelines (Highest to Lowest Priority)
-              </a>
+        <div class="inner-main p-5 pt-0">
+
+              <div class="d-flex gap-2 align-items-center">
+                <h2 class="sub-title">WCAG Document</h2>
+              </div>
+              <p class="plain-text">
+                These guidelines explain how to make web content more accessible
+                to people with various abilities and disabilities. People
+                involved in web development should know and follow these
+                guidelines. They are especially important for designers,
+                developers, content creators, and people who test websites.
+                Following these guidelines makes sure websites meet the minimum
+                accessibility standards.
+              </p>
+              <div class="row">
+                <div class="col-sm-8">
+              <div class="d-flex gap-2 align-items-center">
+                <h2 class="sub-title">Web Compliance</h2>
+                <a
+                  class="font-weight-bold demo-links"
+                  href="highest-lowest-priority.html"
+                  >WCAG 2.2 AA Guidelines (Highest to Lowest Priority)
+                </a>
+              </div>
+              <p class="plain-text">
+                Web accessibility compliance involves adhering to legal
+                standards and guidelines that ensure digital content is
+                accessible to all users, including those with disabilities. Laws
+                like the Section 508 mandate specific accessibility criteria,
+                while the Web Content Accessibility Guidelines (WCAG) outline
+                best practices for creating accessible content.
+              </p>
             </div>
-            <p class="plain-text">
-              Web accessibility compliance involves adhering to legal standards
-              and guidelines that ensure digital content is accessible to all
-              users, including those with disabilities. Laws like the Section
-              508 mandate specific accessibility criteria, while the Web Content
-              Accessibility Guidelines (WCAG) outline best practices for
-              creating accessible content. Compliance helps organizations avoid
-              legal issues and fosters inclusivity, enhancing the user
-              experience for a diverse audience.
-            </p>
-            <p class="plain-text">
-              <strong class="red-color">Note*</strong>: The following
-              documentation does not cover all of the WCAG AAA requirements. For
-              all compliance, you can visit the provided links given in front of
-              all  four major principles: <strong>Perceivable, Operable, Understandable,
-              and Robust</strong>.
-            </p>
-          </section>
-          <section class="w-100" >
+            <div class="col-sm-4 mt-4">
+              <img
+              class="w-100 rounded"
+                src="assets/images/main-landing-page-img.jpeg"
+                alt="Web Content Accessibility Guidelines (WCAG)"
+              />
+            </div>
+          </div>
+
+          <p class="plain-text importantNote">
+            <strong class="red-color">Note*</strong>: The following
+            documentation does not cover all of the WCAG AAA requirements. For
+            all compliance, you can visit the provided links given in front of
+            all four major principles:
+            <strong>Perceivable, Operable, Understandable, and Robust</strong>.
+          </p>
+          <section class="w-100">
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button
@@ -272,384 +279,479 @@
                       href="https://www.w3.org/WAI/WCAG22/quickref/?versions=2.2&currentsidebar=%23col_overview#principle1"
                     >
                       <span class="material-symbols-outlined small-icon">
-open_in_new
-</span></i
-                    ></a>
+                        open_in_new
+                      </span></a
+                    >
                   </h2>
-                  <ul
-                    style="list-style-type: disclosure-closed"
-                    class="complaince-list"
-                  >
-                    <li>
-                      <strong> Guideline 1.1 – Text Alternatives </strong
-                      >Provide text alternatives for any non-text content so
-                      that it can be changed into other forms people need, such
-                      as large print, braille, speech, symbols or simpler
-                      language.
-                      <ul class="inner-list">
-                        <li>
-                          <strong> 1.1.1 Non-text Content - Level A</strong> All
-                          non-text content that is presented to the user has a
-                          text alternative that serves the equivalent purpose.
 
+                  <div class="accordion mb-3 mt-3" id="perceivable-accordion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="perceivableHeadingOne">
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#perceivableCollapseOne"
+                          aria-expanded="true"
+                          aria-controls="perceivableCollapseOne"
+                        >
+                          <strong> Guideline 1.1 – Text Alternatives </strong>
+                        </button>
+                      </h2>
+                      <div
+                        id="perceivableCollapseOne"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="perceivableHeadingOne"
+                        data-bs-parent="#perceivable-accordion"
+                      >
+                        <div class="accordion-body">
+                          <strong> Guideline 1.1 – Text Alternatives </strong
+                          >Provide text alternatives for any non-text content so
+                          that it can be changed into other forms people need,
+                          such as large print, braille, speech, symbols or
+                          simpler language.
                           <ul class="inner-list">
                             <li>
-                              <strong> Meaningful-image-name</strong> All
-                              meaningful images that are presented to the user
-                              have equivalent, accessible descriptions.
-                              <a
-                                id="meaningful-image-name"
-                                class="font-weight-bold demo-links"
-                                href="./Perceivable/1.1-guideline-text-alternatives/meaningful-image-name.html"
-                              >
-                                Meaningful Images Demo
-                              </a>
-                            </li>
-                            <li>
-                              <strong> Decorative-image</strong> All decorative
-                              images that are presented to the user do not have
-                              alternate text.
+                              <strong> 1.1.1 Non-text Content - Level A</strong>
+                              All non-text content that is presented to the user
+                              has a text alternative that serves the equivalent
+                              purpose.
 
-                              <a
-                              id="decorative-image"
-                                class="font-weight-bold demo-links"
-                                href="./Perceivable/1.1-guideline-text-alternatives/decorative-image.html"
-                              >
-                                Decorative Images Demo
-                              </a>
-                            </li>
-                            <li>
-                              <strong> Decorative-background-image</strong>
-                              requires that important information provided by
-                              background images is also included by other
-                              methods.
+                              <ul class="inner-list">
+                                <li>
+                                  <strong> Meaningful-image-name</strong> All
+                                  meaningful images that are presented to the
+                                  user have equivalent, accessible descriptions.
+                                  <a
+                                    id="meaningful-image-name"
+                                    class="font-weight-bold demo-links"
+                                    href="./Perceivable/1.1-guideline-text-alternatives/meaningful-image-name.html"
+                                  >
+                                    Meaningful Images Demo
+                                  </a>
+                                </li>
+                                <li>
+                                  <strong> Decorative-image</strong> All
+                                  decorative images that are presented to the
+                                  user do not have alternate text.
 
-                              <a
-                                id="decorative-background-image"
-                                class="font-weight-bold demo-links"
-                                href="./Perceivable/1.1-guideline-text-alternatives/decorative-background-image.html"
-                              >
-                                Decorative Background Images Demo
-                              </a>
-                            </li>
-                            <li>
-                              <strong> Captcha-alternative</strong> requires
-                              that CAPTCHA provides formats for users without
-                              vision and users without hearing.
+                                  <a
+                                    id="decorative-image"
+                                    class="font-weight-bold demo-links"
+                                    href="./Perceivable/1.1-guideline-text-alternatives/decorative-image.html"
+                                  >
+                                    Decorative Images Demo
+                                  </a>
+                                </li>
+                                <li>
+                                  <strong> Decorative-background-image</strong>
+                                  requires that important information provided
+                                  by background images is also included by other
+                                  methods.
 
-                              <a
-                                id="captcha-alternative"
-                                class="font-weight-bold demo-links"
-                                href="./Perceivable/1.1-guideline-text-alternatives/captcha-alternative.html"
-                              >
-                                Captcha Alternatives Demo
-                              </a>
+                                  <a
+                                    id="decorative-background-image"
+                                    class="font-weight-bold demo-links"
+                                    href="./Perceivable/1.1-guideline-text-alternatives/decorative-background-image.html"
+                                  >
+                                    Decorative Background Images Demo
+                                  </a>
+                                </li>
+                                <li>
+                                  <strong> Captcha-alternative</strong> requires
+                                  that CAPTCHA provides formats for users
+                                  without vision and users without hearing.
+
+                                  <a
+                                    id="captcha-alternative"
+                                    class="font-weight-bold demo-links"
+                                    href="./Perceivable/1.1-guideline-text-alternatives/captcha-alternative.html"
+                                  >
+                                    Captcha Alternatives Demo
+                                  </a>
+                                </li>
+                              </ul>
                             </li>
                           </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <strong>Guideline 1.2 - Time-based Media</strong> requires
-                      that alternatives are provided for all time-based media
-                      (audio-only, video-only, audio-video, audio and/or video).
-                      <ul class="inner-list">
-                        <li>
-                          <strong>
-                            Audio-only and Video-only (Prerecorded)</strong
-                          >
-                          requires text or audio alternatives for audio-only and
-                          video-only content, ensuring the same information is
-                          accessible.
-                          <ul class="inner-list">
-                            <li>
-                              <strong> Audio-transcript-text</strong> requires
-                              transcripts are provided for pre-recorded
-                              audio-only content. Transcripts must be accurate
-                              and complete.
-                              <a
-                                class="font-weight-bold demo-links"
-                                href="./Perceivable/1.2-time-based-media/audio-only-content.html"
-                              >
-                                Audio Only Media Demo
-                              </a>
-                            </li>
-                            <li>
-                              <strong> Video- alternative-equivalent</strong>
-                              requires text or audio alternatives for
-                              prerecorded video-only content, conveying the same
-                              information as the video.
-                              <a
-                                class="font-weight-bold demo-links"
-                                href="./Perceivable/1.2-time-based-media/video-only-content.html"
-                              >
-                                Video Only Media Demo
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-
-                        <li>
-                          <strong>1.2.2 Captions (Prerecorded)</strong> requires
-                          synchronized and accurate captions for all prerecorded
-                          audio content, ensuring accessibility for users.
-                          Captions must be time-synchronized and equivalent.
-
-                          <a
-                            class="font-weight-bold demo-links"
-                            href="./Perceivable/1.2-time-based-media/captions-prerecorded.html"
-                          >
-                            Captions Prerecorded Demo
-                          </a>
-                        </li>
-
-                        <li>
-                          <strong
-                            >1.2.3 Audio Description or Media Alternative
-                            (Prerecorded)</strong
-                          >
-                          requires that prerecorded media content includes audio
-                          descriptions or alternative text tracks.
-                          <a
-                            class="font-weight-bold demo-links"
-                            href="./Perceivable/1.2-time-based-media/audio-description-or-media-alternative.html"
-                          >
-                            Audio Description or Media Alternative Demo
-                          </a>
-                        </li>
-
-                        <li>
-                          <strong>1.2.4 Captions (Live)</strong> requires
-                          accurate captions for live synchronized media. The
-                          captions must be time-synchronized and equivalent.
-
-                          <a
-                            class="font-weight-bold demo-links"
-                            href="./Perceivable/1.2-time-based-media/captions-live.html"
-                          >
-                            Captions Live Demo
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <strong>Guideline 1.3 - Adaptable</strong> ensures that
-                      the content can be presented in different ways without
-                      losing meaning.
-
-                      <ul class="inner-list">
-                        <li>
-                          <strong> 1.3.1 Info and Relationships</strong> ensures
-                          that information and its connections are
-                          programmatically identifiable, allowing assistive
-                          technologies to convey structure accurately.
-
-                          <ul class="inner-list">
-                            <li>
-                              <strong> Heading-determinable and levels</strong>
-                              ensures that headings are used correctly and in a
-                              hierarchical manner, allowing users to easily
-                              understand the content.
-                              <a
-                                class="font-weight-bold demo-links"
-                                href="./Perceivable/1.3-Adaptable/heading-determinable-and-levels.html"
-                                id="heading-determinable-and-levels"
-                              >
-                                Heading Determinable and Levels Demo
-                              </a>
-                            </li>
-                            <li>
-                              <strong> List-type</strong> requires that all
-                              visually apparent lists are programmatically
-                              identified as the correct list type: ordered,
-                              unordered, or description list.
-                              <a
-                                class="font-weight-bold demo-links"
-                                href="./Perceivable/1.3-Adaptable/list-type.html"
-                                id="list-type"
-                              >
-                                List Type Demo
-                              </a>
-                            </li>
-                            <li>
-                              <strong> Programmatic-label</strong> requires that
-                              all form elements have programmatic associations
-                              which accurately describe the form element and
-                              include all relevant instructions.
-                              <a
-                                class="font-weight-bold demo-links"
-                                href="./Perceivable/1.3-Adaptable/programmatic-label.html"
-                                id="programmatic-label"
-                              >
-                                Programmatic Label Demo
-                              </a>
-                            </li>
-                            <li>
-                              <strong> Table-identification</strong> requires
-                              that data tables have the correct programmatic
-                              table markup to identify them as data tables.
-                              <a
-                                class="font-weight-bold demo-links"
-                                href="./Perceivable/1.3-Adaptable/table-identification.html"
-                                id="table-identification"
-                              >
-                                Table Identification Demo
-                              </a>
-                            </li>
-                            <li>
-                              <strong> Cell-header-association</strong> requires
-                              that data table cells are correctly associated
-                              with the relevant headers.
-                              <a
-                                class="font-weight-bold demo-links"
-                                href="./Perceivable/1.3-Adaptable/cell-header-association.html"
-                                id="Cell-header-association"
-                              >
-                                Cell Header Association Demo
-                              </a>
-                            </li>
-                            <li>
-                              <strong> Layout-table-structure</strong> requires
-                              that layout tables are not coded as data tables.
-                              No data table semantics should be detected.
-                              <a 
-                                class="font-weight-bold demo-links"
-                                href="./Perceivable/1.3-Adaptable/layout-table.html"
-                                id="layout-table-structure"
-                              >
-                                Layout Table Structure Demo
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <strong>1.3.2 Meaningful Sequence</strong> requires
-                          that content is presented in a logical order, ensuring
-                          that users can understand and navigate the information
-                          effectively.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="perceivableHeadingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#perceivableCollapseTwo"
+                          aria-expanded="false"
+                          aria-controls="perceivableCollapseTwo"
+                        >
+                          <strong>Guideline 1.2 - Time-based Media</strong>
+                        </button>
+                      </h2>
+                      <div
+                        id="perceivableCollapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="perceivableHeadingTwo"
+                        data-bs-parent="#perceivable-accordion"
+                      >
+                        <div class="accordion-body">
+                          <strong>Guideline 1.2 - Time-based Media</strong>
+                          requires that alternatives are provided for all
+                          time-based media (audio-only, video-only, audio-video,
+                          audio and/or video).
                           <ul class="inner-list">
                             <li>
                               <strong>
-                                Content-order-meaning-CSS- position</strong
+                                Audio-only and Video-only (Prerecorded)</strong
                               >
-                              ensures that the visual layout does not change the
-                              meaning of content, allowing assistive
-                              technologies to interpret it correctly.
+                              requires text or audio alternatives for audio-only
+                              and video-only content, ensuring the same
+                              information is accessible.
+                              <ul class="inner-list">
+                                <li>
+                                  <strong> Audio-transcript-text</strong>
+                                  requires transcripts are provided for
+                                  pre-recorded audio-only content. Transcripts
+                                  must be accurate and complete.
+                                  <a
+                                    class="font-weight-bold demo-links"
+                                    href="./Perceivable/1.2-time-based-media/audio-only-content.html"
+                                  >
+                                    Audio Only Media Demo
+                                  </a>
+                                </li>
+                                <li>
+                                  <strong>
+                                    Video- alternative-equivalent</strong
+                                  >
+                                  requires text or audio alternatives for
+                                  prerecorded video-only content, conveying the
+                                  same information as the video.
+                                  <a
+                                    class="font-weight-bold demo-links"
+                                    href="./Perceivable/1.2-time-based-media/video-only-content.html"
+                                  >
+                                    Video Only Media Demo
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+
+                            <li>
+                              <strong>1.2.2 Captions (Prerecorded)</strong>
+                              requires synchronized and accurate captions for
+                              all prerecorded audio content, ensuring
+                              accessibility for users. Captions must be
+                              time-synchronized and equivalent.
 
                               <a
                                 class="font-weight-bold demo-links"
-                                href="./Perceivable/1.3-Adaptable/content-order-meaning-CSS-position.html"
-                                id="content-order-meaning-css-position"
+                                href="./Perceivable/1.2-time-based-media/captions-prerecorded.html"
                               >
-                                Content order meaning CSS position Demo
+                                Captions Prerecorded Demo
+                              </a>
+                            </li>
+
+                            <li>
+                              <strong
+                                >1.2.3 Audio Description or Media Alternative
+                                (Prerecorded)</strong
+                              >
+                              requires that prerecorded media content includes
+                              audio descriptions or alternative text tracks.
+                              <a
+                                class="font-weight-bold demo-links"
+                                href="./Perceivable/1.2-time-based-media/audio-description-or-media-alternative.html"
+                              >
+                                Audio Description or Media Alternative Demo
+                              </a>
+                            </li>
+
+                            <li>
+                              <strong>1.2.4 Captions (Live)</strong> requires
+                              accurate captions for live synchronized media. The
+                              captions must be time-synchronized and equivalent.
+
+                              <a
+                                class="font-weight-bold demo-links"
+                                href="./Perceivable/1.2-time-based-media/captions-live.html"
+                              >
+                                Captions Live Demo
                               </a>
                             </li>
                           </ul>
-                        </li>
-                        <li>
-                          <strong>1.3.3 Sensory Characteristics</strong>
-                          requires that instructions for user interactions do
-                          not rely solely on sensory characteristics, such as
-                          shape, color, visual location or sound.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="perceivableHeadingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#perceivableCollapseThree"
+                          aria-expanded="false"
+                          aria-controls="perceivableCollapseThree"
+                        >
+                          <strong>Guideline 1.3 - Adaptable</strong>
+                        </button>
+                      </h2>
+                      <div
+                        id="perceivableCollapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="perceivableHeadingThree"
+                        data-bs-parent="#perceivable-accordion"
+                      >
+                        <div class="accordion-body">
+                          <strong>Guideline 1.3 - Adaptable</strong> ensures
+                          that the content can be presented in different ways
+                          without losing meaning.
 
-                          <a
-                            class="font-weight-bold demo-links"
-                            href="./Perceivable/1.3-Adaptable/sensory-characteristics.html"
-                            id="sensory-characteristics"
-                          >
-                            Sensory Characteristics Demo
-                          </a>
-                        </li>
-                        <li>
-                          <strong>1.3.4 Orientation</strong> mandates that
-                          content must be presented in a way that supports both
-                          portrait and landscape orientations.
+                          <ul class="inner-list">
+                            <li>
+                              <strong> 1.3.1 Info and Relationships</strong>
+                              ensures that information and its connections are
+                              programmatically identifiable, allowing assistive
+                              technologies to convey structure accurately.
 
-                          <a
-                            class="font-weight-bold demo-links"
-                            href="./Perceivable/1.3-Adaptable/orientation.html"
-                            id="orientation"
-                          >
-                            Orientation Demo
-                          </a>
-                        </li>
-                        <li>
-                          <strong>1.3.5 Identify Input Purpose</strong> requires
-                          that users are informed about the expected purpose of
-                          input fields through clear labels or instructions.
+                              <ul class="inner-list">
+                                <li>
+                                  <strong>
+                                    Heading-determinable and levels</strong
+                                  >
+                                  ensures that headings are used correctly and
+                                  in a hierarchical manner, allowing users to
+                                  easily understand the content.
+                                  <a
+                                    class="font-weight-bold demo-links"
+                                    href="./Perceivable/1.3-Adaptable/heading-determinable-and-levels.html"
+                                    id="heading-determinable-and-levels"
+                                  >
+                                    Heading Determinable and Levels Demo
+                                  </a>
+                                </li>
+                                <li>
+                                  <strong> List-type</strong> requires that all
+                                  visually apparent lists are programmatically
+                                  identified as the correct list type: ordered,
+                                  unordered, or description list.
+                                  <a
+                                    class="font-weight-bold demo-links"
+                                    href="./Perceivable/1.3-Adaptable/list-type.html"
+                                    id="list-type"
+                                  >
+                                    List Type Demo
+                                  </a>
+                                </li>
+                                <li>
+                                  <strong> Programmatic-label</strong> requires
+                                  that all form elements have programmatic
+                                  associations which accurately describe the
+                                  form element and include all relevant
+                                  instructions.
+                                  <a
+                                    class="font-weight-bold demo-links"
+                                    href="./Perceivable/1.3-Adaptable/programmatic-label.html"
+                                    id="programmatic-label"
+                                  >
+                                    Programmatic Label Demo
+                                  </a>
+                                </li>
+                                <li>
+                                  <strong> Table-identification</strong>
+                                  requires that data tables have the correct
+                                  programmatic table markup to identify them as
+                                  data tables.
+                                  <a
+                                    class="font-weight-bold demo-links"
+                                    href="./Perceivable/1.3-Adaptable/table-identification.html"
+                                    id="table-identification"
+                                  >
+                                    Table Identification Demo
+                                  </a>
+                                </li>
+                                <li>
+                                  <strong> Cell-header-association</strong>
+                                  requires that data table cells are correctly
+                                  associated with the relevant headers.
+                                  <a
+                                    class="font-weight-bold demo-links"
+                                    href="./Perceivable/1.3-Adaptable/cell-header-association.html"
+                                    id="Cell-header-association"
+                                  >
+                                    Cell Header Association Demo
+                                  </a>
+                                </li>
+                                <li>
+                                  <strong> Layout-table-structure</strong>
+                                  requires that layout tables are not coded as
+                                  data tables. No data table semantics should be
+                                  detected.
+                                  <a
+                                    class="font-weight-bold demo-links"
+                                    href="./Perceivable/1.3-Adaptable/layout-table.html"
+                                    id="layout-table-structure"
+                                  >
+                                    Layout Table Structure Demo
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <strong>1.3.2 Meaningful Sequence</strong>
+                              requires that content is presented in a logical
+                              order, ensuring that users can understand and
+                              navigate the information effectively.
+                              <ul class="inner-list">
+                                <li>
+                                  <strong>
+                                    Content-order-meaning-CSS- position</strong
+                                  >
+                                  ensures that the visual layout does not change
+                                  the meaning of content, allowing assistive
+                                  technologies to interpret it correctly.
 
-                          <a
-                            class="font-weight-bold demo-links"
-                            href="./Perceivable/1.3-Adaptable/identify-input-purpose.html"
-                            id="identify-input-purpose"
-                          >
-                            Identify Input Purpose Demo
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <strong>Guideline 1.4 - Distinguishable</strong> ensures
-                      users can easily perceive and differentiate content,
-                      emphasizing color contrast, text spacing, and visibility
-                      to enhance accessibility.
-                      <ul class="inner-list">
-                        <li>
-                          <strong>1.4.1 Use of Color</strong> requires that
-                          color is not the only visual means used to convey
-                          information, indicate an action, prompt a response, or
-                          distinguish a visual element.
-                        </li>
-                        <li>
-                          <strong>1.4.2 Audio Control</strong> requires a method
-                          for pausing and stopping audio or controlling the
-                          volume of auto-playing content within the first three
-                          elements a user encounters on a web page.
-                        </li>
-                        <li>
-                          <strong>1.4.3 Contrast (Minimum)</strong> ensures that
-                          text and interactive elements have sufficient contrast
-                          against their background to enhance readability for
-                          users with visual impairments.
-                        </li>
-                        <li>
-                          <strong>1.4.4 Resize Text</strong> requires that there
-                          is a mechanism to resize, scale, or zoom in on the
-                          text to at least 200% of its original size without
-                          loss of content or functionality.
-                        </li>
-                        <li>
-                          <strong>1.4.5 Images of Text</strong> requires that
-                          images of text are either essential, such as
-                          logotypes, or presented along with user controls to
-                          customize font, size, color and background.
-                        </li>
-                        <li>
-                          <strong>1.4.10 Reflow</strong> ensures that content
-                          can adapt to various screen sizes, with a minimum
-                          width of 320 pixels and a height of 256 pixels.
-                        </li>
-                        <li>
-                          <strong>1.4.11 Non-text Contrast</strong> requires
-                          that visual elements, such as user interface
-                          components and graphical objects, have a contrast
-                          ratio of at least 3:1 against adjacent colors
-                        </li>
-                        <li>
-                          <strong>1.4.12 Text Spacing</strong> ensures that
-                          users can adjust the spacing between characters,
-                          words, lines, and paragraphs without loss of content
-                          or functionality.
-                        </li>
-                        <li>
-                          <strong>1.4.13 Content on Hover or Focus</strong>
-                          requires that any content displayed on hover or focus
-                          (like tooltips or menus) must be accessible and not
-                          obscure other content.
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                                  <a
+                                    class="font-weight-bold demo-links"
+                                    href="./Perceivable/1.3-Adaptable/content-order-meaning-CSS-position.html"
+                                    id="content-order-meaning-css-position"
+                                  >
+                                    Content order meaning CSS position Demo
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <strong>1.3.3 Sensory Characteristics</strong>
+                              requires that instructions for user interactions
+                              do not rely solely on sensory characteristics,
+                              such as shape, color, visual location or sound.
+
+                              <a
+                                class="font-weight-bold demo-links"
+                                href="./Perceivable/1.3-Adaptable/sensory-characteristics.html"
+                                id="sensory-characteristics"
+                              >
+                                Sensory Characteristics Demo
+                              </a>
+                            </li>
+                            <li>
+                              <strong>1.3.4 Orientation</strong> mandates that
+                              content must be presented in a way that supports
+                              both portrait and landscape orientations.
+
+                              <a
+                                class="font-weight-bold demo-links"
+                                href="./Perceivable/1.3-Adaptable/orientation.html"
+                                id="orientation"
+                              >
+                                Orientation Demo
+                              </a>
+                            </li>
+                            <li>
+                              <strong>1.3.5 Identify Input Purpose</strong>
+                              requires that users are informed about the
+                              expected purpose of input fields through clear
+                              labels or instructions.
+
+                              <a
+                                class="font-weight-bold demo-links"
+                                href="./Perceivable/1.3-Adaptable/identify-input-purpose.html"
+                                id="identify-input-purpose"
+                              >
+                                Identify Input Purpose Demo
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="perceivableHeadingFour">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#perceivableCollapseFour"
+                          aria-expanded="false"
+                          aria-controls="perceivableCollapseFour"
+                        >
+                          <strong>Guideline 1.4 - Distinguishable</strong>
+                        </button>
+                      </h2>
+                      <div
+                        id="perceivableCollapseFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="perceivableHeadingFour"
+                        data-bs-parent="#perceivable-accordion"
+                      >
+                        <div class="accordion-body">
+                          <strong>Guideline 1.4 - Distinguishable</strong>
+                          ensures users can easily perceive and differentiate
+                          content, emphasizing color contrast, text spacing, and
+                          visibility to enhance accessibility.
+                          <ul class="inner-list">
+                            <li>
+                              <strong>1.4.1 Use of Color</strong> requires that
+                              color is not the only visual means used to convey
+                              information, indicate an action, prompt a
+                              response, or distinguish a visual element.
+                            </li>
+                            <li>
+                              <strong>1.4.2 Audio Control</strong> requires a
+                              method for pausing and stopping audio or
+                              controlling the volume of auto-playing content
+                              within the first three elements a user encounters
+                              on a web page.
+                            </li>
+                            <li>
+                              <strong>1.4.3 Contrast (Minimum)</strong> ensures
+                              that text and interactive elements have sufficient
+                              contrast against their background to enhance
+                              readability for users with visual impairments.
+                            </li>
+                            <li>
+                              <strong>1.4.4 Resize Text</strong> requires that
+                              there is a mechanism to resize, scale, or zoom in
+                              on the text to at least 200% of its original size
+                              without loss of content or functionality.
+                            </li>
+                            <li>
+                              <strong>1.4.5 Images of Text</strong> requires
+                              that images of text are either essential, such as
+                              logotypes, or presented along with user controls
+                              to customize font, size, color and background.
+                            </li>
+                            <li>
+                              <strong>1.4.10 Reflow</strong> ensures that
+                              content can adapt to various screen sizes, with a
+                              minimum width of 320 pixels and a height of 256
+                              pixels.
+                            </li>
+                            <li>
+                              <strong>1.4.11 Non-text Contrast</strong> requires
+                              that visual elements, such as user interface
+                              components and graphical objects, have a contrast
+                              ratio of at least 3:1 against adjacent colors
+                            </li>
+                            <li>
+                              <strong>1.4.12 Text Spacing</strong> ensures that
+                              users can adjust the spacing between characters,
+                              words, lines, and paragraphs without loss of
+                              content or functionality.
+                            </li>
+                            <li>
+                              <strong>1.4.13 Content on Hover or Focus</strong>
+                              requires that any content displayed on hover or
+                              focus (like tooltips or menus) must be accessible
+                              and not obscure other content.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div
@@ -675,223 +777,345 @@ open_in_new
                       target="_blank"
                       href="https://www.w3.org/WAI/WCAG22/quickref/?versions=2.2&currentsidebar=%23col_overview#principle2"
                       ><span class="material-symbols-outlined small-icon">
-open_in_new
-</span></i
-                    ></a>
+                        open_in_new
+                      </span></a
+                    >
                   </h2>
-                  <ul
-                    style="list-style-type: disclosure-closed"
-                    class="complaince-list"
-                  >
-                    <li>
-                      <strong> Guideline 2.1 – Keyboard Accessible </strong>
-                      mandates that all interface functions are operable via
-                      keyboard, ensuring accessibility for users with
-                      disabilities.
-                      <ul class="inner-list">
-                        <li>
-                          <strong>2.1.1-keyboard-access</strong> requires that
-                          all functionality of a webpage is accessible through a
-                          keyboard, ensuring users can navigate and interact
-                          without a mouse.
-                        </li>
-                        <li>
-                          <strong>2.1.2 No Keyboard Trap</strong> requires that
-                          there are no keyboard traps on the page and users can
-                          easily navigate away from any component using only the
-                          keyboard.
-                        </li>
-                        <li>
-                          <strong>2.1.4 Character Key Shortcuts</strong>
-                          requires that character key shortcuts do not interfere
-                          with standard keyboard operations, allowing users to
-                          navigate without unintended conflicts.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <strong>Guideline 2.2 - Enough Time</strong> ensures that
-                      users have sufficient time to read and interact with
-                      content.
-                      <ul class="inner-list">
-                        <li>
-                          <strong>2.2.1 Timing Adjustable</strong> requires that
-                          any time limits can be adjusted or extended, allowing
-                          users to have adequate time to complete tasks based on
-                          their individual needs.
-                        </li>
-                        <li>
-                          <strong>2.2.2 Pause, Stop, Hide</strong> requires
-                          users to be able to pause, stop, or hide moving
-                          content, allowing them to control their viewing
-                          experience.
+                  <div class="accordion mb-3 mt-3" id="operable-accordion">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="operableHeadingOne">
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#operableCollapseOne"
+                          aria-expanded="true"
+                          aria-controls="operableCollapseOne"
+                        >
+                          <strong> Guideline 2.1 – Keyboard Accessible </strong>
+                        </button>
+                      </h2>
+                      <div
+                        id="operableCollapseOne"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="operableHeadingOne"
+                        data-bs-parent="#operable-accordion"
+                      >
+                        <div class="accordion-body">
+                          <strong> Guideline 2.1 – Keyboard Accessible </strong>
+                          mandates that all interface functions are operable via
+                          keyboard, ensuring accessibility for users with
+                          disabilities.
                           <ul class="inner-list">
                             <li>
-                              <strong>2.2.2-blinking-moving-scrolling</strong>
-                              requires that users can pause, stop, or hide
-                              content that blinks, moves, or scrolls, ensuring
-                              they can manage distractions and focus.
+                              <strong>2.1.1-keyboard-access</strong> requires
+                              that all functionality of a webpage is accessible
+                              through a keyboard, ensuring users can navigate
+                              and interact without a mouse.
                             </li>
                             <li>
-                              <strong>2.2.2-auto-updating</strong> mandates that
-                              users can pause, stop, or hide content that
-                              updates automatically, allowing them to focus on
-                              the information.
+                              <strong>2.1.2 No Keyboard Trap</strong> requires
+                              that there are no keyboard traps on the page and
+                              users can easily navigate away from any component
+                              using only the keyboard.
+                            </li>
+                            <li>
+                              <strong>2.1.4 Character Key Shortcuts</strong>
+                              requires that character key shortcuts do not
+                              interfere with standard keyboard operations,
+                              allowing users to navigate without unintended
+                              conflicts.
                             </li>
                           </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <strong
-                        >Guideline 2.3 - Seizures and Physical Reactions</strong
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="operableHeadingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#operableCollapseTwo"
+                          aria-expanded="false"
+                          aria-controls="operableCollapseTwo"
+                        >
+                          <strong>Guideline 2.2 - Enough Time</strong>
+                        </button>
+                      </h2>
+                      <div
+                        id="operableCollapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="operableHeadingTwo"
+                        data-bs-parent="#operable-accordion"
                       >
-                      seeks to prevent triggering seizures by avoiding content
-                      that flashes more than three times per second and
-                      providing warnings.
-                      <ul class="inner-list">
-                        <li>
+                        <div class="accordion-body">
+                          <strong>Guideline 2.2 - Enough Time</strong> ensures
+                          that users have sufficient time to read and interact
+                          with content.
+                          <ul class="inner-list">
+                            <li>
+                              <strong>2.2.1 Timing Adjustable</strong> requires
+                              that any time limits can be adjusted or extended,
+                              allowing users to have adequate time to complete
+                              tasks based on their individual needs.
+                            </li>
+                            <li>
+                              <strong>2.2.2 Pause, Stop, Hide</strong> requires
+                              users to be able to pause, stop, or hide moving
+                              content, allowing them to control their viewing
+                              experience.
+                              <ul class="inner-list">
+                                <li>
+                                  <strong
+                                    >2.2.2-blinking-moving-scrolling</strong
+                                  >
+                                  requires that users can pause, stop, or hide
+                                  content that blinks, moves, or scrolls,
+                                  ensuring they can manage distractions and
+                                  focus.
+                                </li>
+                                <li>
+                                  <strong>2.2.2-auto-updating</strong> mandates
+                                  that users can pause, stop, or hide content
+                                  that updates automatically, allowing them to
+                                  focus on the information.
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="operableHeadingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#operableCollapseThree"
+                          aria-expanded="false"
+                          aria-controls="operableCollapseThress"
+                        >
                           <strong
-                            >2.3.1 Three Flashes or Below Threshold</strong
+                            >Guideline 2.3 - Seizures and Physical
+                            Reactions</strong
                           >
-                          requires that content does not flash more than three
-                          times in any one second period, reducing the risk of
-                          seizures.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <strong>Guideline 2.4 - Navigable</strong> ensures users
-                      can easily navigate content through clear options,
-                      consistent layouts, and meaningful headings, enhancing the
-                      overall browsing experience.
-                      <ul class="inner-list">
-                        <li>
-                          <strong>2.4.1 Bypass Blocks</strong> requires that
-                          users can bypass repetitive content, such as
-                          navigation menus, to easily access the main content of
-                          a page.
-                        </li>
-                        <li>
-                          <strong>2.4.2 Page Titled</strong> mandates that each
-                          page has a descriptive title, helping users understand
-                          the content and context when navigating through a
-                          site.
+                        </button>
+                      </h2>
+                      <div
+                        id="operableCollapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="operableHeadingThree"
+                        data-bs-parent="#operable-accordion"
+                      >
+                        <div class="accordion-body">
+                          <strong
+                            >Guideline 2.3 - Seizures and Physical
+                            Reactions</strong
+                          >
+                          seeks to prevent triggering seizures by avoiding
+                          content that flashes more than three times per second
+                          and providing warnings.
                           <ul class="inner-list">
                             <li>
                               <strong
-                                >2.4.2-page-title-defined and purpose</strong
+                                >2.3.1 Three Flashes or Below Threshold</strong
                               >
-                              requires that each page has a clear and
-                              descriptive title that conveys its purpose, aiding
-                              users in understanding the content.
+                              requires that content does not flash more than
+                              three times in any one second period, reducing the
+                              risk of seizures.
                             </li>
                           </ul>
-                        </li>
-                        <li>
-                          <strong>2.4.3 Focus Order</strong> mandates that the
-                          focus sequence of interactive elements follows a
-                          logical and intuitive order, ensuring users can easily
-                          navigate through content.
-                        </li>
-                        <li>
-                          <strong>2.4.4 Link Purpose (In Context)</strong>
-                          requires that the purpose of each link is clear from
-                          its context, allowing users to understand where the
-                          link will take them.
-                        </li>
-                        <li>
-                          <strong>2.4.5 Multiple Ways</strong> requires that
-                          there are two or more ways (site maps, search,
-                          navigation menus, etc) to locate a web page within a
-                          set of web pages.
-                        </li>
-                        <li>
-                          <strong>2.4.6 Headings and Labels</strong> requires
-                          that headings and labels are used effectively to
-                          organize content, helping users understand the
-                          structure and navigate the information easily.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="operableHeadingFour">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#operableCollapseFour"
+                          aria-expanded="false"
+                          aria-controls="operableCollapseFour"
+                        >
+                          <strong>Guideline 2.4 - Navigable</strong>
+                        </button>
+                      </h2>
+                      <div
+                        id="operableCollapseFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="operableHeadingFour"
+                        data-bs-parent="#operable-accordion"
+                      >
+                        <div class="accordion-body">
+                          <strong>Guideline 2.4 - Navigable</strong> ensures
+                          users can easily navigate content through clear
+                          options, consistent layouts, and meaningful headings,
+                          enhancing the overall browsing experience.
                           <ul class="inner-list">
                             <li>
-                              <strong>2.4.6-heading-purpose and level</strong>
-                              mandates that headings accurately convey the
-                              content they represent, helping users understand
-                              the structure and context of the information on a
-                              page.
+                              <strong>2.4.1 Bypass Blocks</strong> requires that
+                              users can bypass repetitive content, such as
+                              navigation menus, to easily access the main
+                              content of a page.
                             </li>
                             <li>
-                              <strong>2.4.6-label-descriptive</strong> requires
-                              that all labels are clear and descriptive,
-                              ensuring users can easily understand the purpose
-                              of each input element within a form.
+                              <strong>2.4.2 Page Titled</strong> mandates that
+                              each page has a descriptive title, helping users
+                              understand the content and context when navigating
+                              through a site.
+                              <ul class="inner-list">
+                                <li>
+                                  <strong
+                                    >2.4.2-page-title-defined and
+                                    purpose</strong
+                                  >
+                                  requires that each page has a clear and
+                                  descriptive title that conveys its purpose,
+                                  aiding users in understanding the content.
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <strong>2.4.3 Focus Order</strong> mandates that
+                              the focus sequence of interactive elements follows
+                              a logical and intuitive order, ensuring users can
+                              easily navigate through content.
+                            </li>
+                            <li>
+                              <strong>2.4.4 Link Purpose (In Context)</strong>
+                              requires that the purpose of each link is clear
+                              from its context, allowing users to understand
+                              where the link will take them.
+                            </li>
+                            <li>
+                              <strong>2.4.5 Multiple Ways</strong> requires that
+                              there are two or more ways (site maps, search,
+                              navigation menus, etc) to locate a web page within
+                              a set of web pages.
+                            </li>
+                            <li>
+                              <strong>2.4.6 Headings and Labels</strong>
+                              requires that headings and labels are used
+                              effectively to organize content, helping users
+                              understand the structure and navigate the
+                              information easily.
+                              <ul class="inner-list">
+                                <li>
+                                  <strong
+                                    >2.4.6-heading-purpose and level</strong
+                                  >
+                                  mandates that headings accurately convey the
+                                  content they represent, helping users
+                                  understand the structure and context of the
+                                  information on a page.
+                                </li>
+                                <li>
+                                  <strong>2.4.6-label-descriptive</strong>
+                                  requires that all labels are clear and
+                                  descriptive, ensuring users can easily
+                                  understand the purpose of each input element
+                                  within a form.
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <strong>2.4.7 Focus Visible</strong> mandates that
+                              the current focus state of interactive elements is
+                              clearly visible, allowing users to easily identify
+                              where they are within the interface.
+                            </li>
+                            <li>
+                              <strong
+                                >2.4.11 Focus Not Obscured (Minimum)</strong
+                              >
+                              requires that focused elements are not hidden or
+                              obscured by other content, ensuring users can
+                              easily interact with them.
+                            </li>
+                            <li>
+                              <strong>2.4.13 Focus Appearance (AAA)</strong>
+                              requires focus indicators with a minimum outline
+                              thickness of 2px and a contrast ratio of at least
+                              3:1 against the background for better visibility.
                             </li>
                           </ul>
-                        </li>
-                        <li>
-                          <strong>2.4.7 Focus Visible</strong> mandates that the
-                          current focus state of interactive elements is clearly
-                          visible, allowing users to easily identify where they
-                          are within the interface.
-                        </li>
-                        <li>
-                          <strong>2.4.11 Focus Not Obscured (Minimum)</strong>
-                          requires that focused elements are not hidden or
-                          obscured by other content, ensuring users can easily
-                          interact with them.
-                        </li>
-                        <li>
-                          <strong>2.4.13 Focus Appearance (AAA)</strong>
-                          requires focus indicators with a minimum outline
-                          thickness of 2px and a contrast ratio of at least 3:1
-                          against the background for better visibility.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <strong>Guideline 2.5 - Input Modalities</strong> ensures
-                      users can interact with content through multiple input
-                      methods, such as keyboard, mouse, touch, and voice,
-                      enhancing accessibility.
-                      <ul class="inner-list">
-                        <li>
-                          <strong>2.5.1 Pointer Gestures</strong> mandates that
-                          all functions accessible via pointer gestures can also
-                          be performed with a single pointer activation,
-                          enhancing accessibility.
-                        </li>
-                        <li>
-                          <strong>2.5.2 Pointer Cancellation</strong> requires
-                          that users can cancel or abort actions initiated by
-                          pointer input, preventing accidental activations and
-                          enhancing usability.
-                        </li>
-                        <li>
-                          <strong>2.5.3 Label in Name</strong> mandates that the
-                          name of user interface components includes their
-                          visible label, ensuring that assistive technologies
-                          can accurately convey their purpose.
-                        </li>
-                        <li>
-                          <strong>2.5.4 Motion Actuation</strong> requires that
-                          functionality triggered by device motion can also be
-                          operated through other means, ensuring accessibility
-                          for users.
-                        </li>
-                        <li>
-                          <strong>2.5.7 Dragging Movements</strong> mandates
-                          that functionality available through dragging gestures
-                          can also be accomplished through alternative methods,
-                          ensuring accessibility for users.
-                        </li>
-                        <li>
-                          <strong>2.5.8 Target Size (Minimum)</strong> mandates
-                          that interactive elements have a minimum target size
-                          of 24x24 pixels to ensure they are easily clickable or
-                          tappable, enhancing accessibility.
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="operableHeadingFive">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#operableCollapseFive"
+                          aria-expanded="false"
+                          aria-controls="operableCollapseFive"
+                        >
+                          <strong>Guideline 2.5 - Input Modalities</strong>
+                        </button>
+                      </h2>
+                      <div
+                        id="operableCollapseFive"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="operableHeadingFive"
+                        data-bs-parent="#operable-accordion"
+                      >
+                        <div class="accordion-body">
+                          <li>
+                            <strong>Guideline 2.5 - Input Modalities</strong>
+                            ensures users can interact with content through
+                            multiple input methods, such as keyboard, mouse,
+                            touch, and voice, enhancing accessibility.
+                            <ul class="inner-list">
+                              <li>
+                                <strong>2.5.1 Pointer Gestures</strong> mandates
+                                that all functions accessible via pointer
+                                gestures can also be performed with a single
+                                pointer activation, enhancing accessibility.
+                              </li>
+                              <li>
+                                <strong>2.5.2 Pointer Cancellation</strong>
+                                requires that users can cancel or abort actions
+                                initiated by pointer input, preventing
+                                accidental activations and enhancing usability.
+                              </li>
+                              <li>
+                                <strong>2.5.3 Label in Name</strong> mandates
+                                that the name of user interface components
+                                includes their visible label, ensuring that
+                                assistive technologies can accurately convey
+                                their purpose.
+                              </li>
+                              <li>
+                                <strong>2.5.4 Motion Actuation</strong> requires
+                                that functionality triggered by device motion
+                                can also be operated through other means,
+                                ensuring accessibility for users.
+                              </li>
+                              <li>
+                                <strong>2.5.7 Dragging Movements</strong>
+                                mandates that functionality available through
+                                dragging gestures can also be accomplished
+                                through alternative methods, ensuring
+                                accessibility for users.
+                              </li>
+                              <li>
+                                <strong>2.5.8 Target Size (Minimum)</strong>
+                                mandates that interactive elements have a
+                                minimum target size of 24x24 pixels to ensure
+                                they are easily clickable or tappable, enhancing
+                                accessibility.
+                              </li>
+                            </ul>
+                          </li>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div
@@ -917,125 +1141,236 @@ open_in_new
                       target="_blank"
                       href="https://www.w3.org/WAI/WCAG22/quickref/?versions=2.2&currentsidebar=%23col_overview#principle3"
                       ><span class="material-symbols-outlined small-icon">
-open_in_new
-</span></i
-                    ></a>
+                        open_in_new
+                      </span></a
+                    >
                   </h2>
-                  <ul
-                    style="list-style-type: disclosure-closed"
-                    class="complaince-list"
+                  <div
+                    class="accordion mb-3 mt-3"
+                    id="understandable-accordion"
                   >
-                    <li>
-                      <strong> Guideline 3.1 - Readable </strong> focuses on
-                      ensuring that content is presented in a way that is easy
-                      to read and understand.
-                      <ul class="inner-list">
-                        <li>
-                          <strong>3.1.1 Language of Page</strong> equires that
-                          web pages programmatically identify the page’s default
-                          human language.
-                        </li>
-                        <li>
-                          <strong>3.1.2 Language of Parts</strong> requires any
-                          part of a page that uses a language other than the
-                          page’s default human language be programmatically
-                          identified.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <strong> Guideline 3.2 - Predictable </strong> ensures
-                      that user interfaces behave in a consistent and expected
-                      manner, allowing users to anticipate how elements will
-                      function.
-                      <ul class="inner-list">
-                        <li>
-                          <strong>3.2.1 On Focus</strong> requires that no
-                          unexpected changes of context occur when an element
-                          receives focus.
-                        </li>
-                        <li>
-                          <strong>3.2.2 On Input</strong> requires that
-                          unexpected changes of context do not occur upon
-                          changing of form field values or selections.
-                        </li>
-                        <li>
-                          <strong>3.2.3 Consistent Navigation</strong> requires
-                          that navigation mechanisms remain consistent
-                          throughout a website or application.
-                        </li>
-                        <li>
-                          <strong>3.2.4 Consistent Identification</strong>
-                          mandates that user interface components are
-                          consistently labeled and identified across a system,
-                          helping users recognize their functions more easily.
-                        </li>
-                        <li>
-                          <strong>3.2.6 Consistent Help</strong> requires that
-                          help information and support mechanisms are
-                          consistently provided across a system, ensuring users
-                          can easily find assistance.
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <strong> Guideline 3.3 - Input Assistance </strong>
-                      ensures users receive support in entering information
-                      accurately through clear labels, instructions, and error
-                      identification.
-                      <ul class="inner-list">
-                        <li>
-                          <strong>3.3.1 Error Identification</strong> mandates
-                          that errors are clearly identified and described when
-                          they occur, ensuring users are aware of issues and can
-                          take corrective action.
-                        </li>
-                        <li>
-                          <strong>3.3.2 Labels or Instructions</strong> requires
-                          that all form elements include clear labels or
-                          instructions, helping users understand how to interact
-                          with them and improving accessibility.
+                    <div class="accordion-item">
+                      <h2
+                        class="accordion-header"
+                        id="understandableHeadingOne"
+                      >
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#understandableCollapseOne"
+                          aria-expanded="true"
+                          aria-controls="understandableCollapseOne"
+                        >
+                          <strong> Guideline 3.1 - Readable </strong>
+                        </button>
+                      </h2>
+                      <div
+                        id="understandableCollapseOne"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="understandableHeadingOne"
+                        data-bs-parent="#understandable-accordion"
+                      >
+                        <div class="accordion-body">
+                          <strong> Guideline 3.1 - Readable </strong> focuses on
+                          ensuring that content is presented in a way that is
+                          easy to read and understand.
                           <ul class="inner-list">
                             <li>
-                              <strong>3.3.2-label-provided</strong> mandates
-                              that all form elements have clear and descriptive
-                              labels, ensuring users can easily understand the
-                              purpose of each field for better accessibility.
+                              <strong>3.1.1 Language of Page</strong> equires
+                              that web pages programmatically identify the
+                              page’s default human language.
+                            </li>
+                            <li>
+                              <strong>3.1.2 Language of Parts</strong> requires
+                              any part of a page that uses a language other than
+                              the page’s default human language be
+                              programmatically identified.
                             </li>
                           </ul>
-                        </li>
-                        <li>
-                          <strong>3.3.3 Error Suggestion</strong> requires that
-                          when users make errors, the system provides
-                          suggestions for corrections, helping them easily
-                          rectify mistakes and enhancing overall usability.
-                        </li>
-                        <li>
-                          <strong
-                            >3.3.4 Error Prevention (Legal, Financial,
-                            Data)</strong
-                          >
-                          requires that users are prompted to confirm actions
-                          that could have consequences, such as legal,
-                          financial, or data-related transactions.
-                        </li>
-                        <li>
-                          <strong>3.3.6 Error Prevention (All, AAA)</strong>
-                          mandates that users are provided with options to
-                          review and confirm inputs before final submission,
-                          helping prevent errors in critical tasks.
-                        </li>
-                        <li>
-                          <strong
-                            >3.3.8 Accessible Authentication (Minimum)</strong
-                          >
-                          requires accessible authentication methods, including
-                          CAPTCHA alternatives and clear labeling of required
-                          information.
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2
+                        class="accordion-header"
+                        id="understandableHeadingTwo"
+                      >
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#understandableCollapseTwo"
+                          aria-expanded="false"
+                          aria-controls="understandableCollapseTwo"
+                        >
+                          <strong> Guideline 3.2 - Predictable </strong>
+                        </button>
+                      </h2>
+                      <div
+                        id="understandableCollapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="understandableHeadingTwo"
+                        data-bs-parent="#understandable-accordion"
+                      >
+                        <div class="accordion-body">
+                          <strong> Guideline 3.2 - Predictable </strong> ensures
+                          that user interfaces behave in a consistent and
+                          expected manner, allowing users to anticipate how
+                          elements will function.
+                          <ul class="inner-list">
+                            <li>
+                              <strong>3.2.1 On Focus</strong> requires that no
+                              unexpected changes of context occur when an
+                              element receives focus.
+                            </li>
+                            <li>
+                              <strong>3.2.2 On Input</strong> requires that
+                              unexpected changes of context do not occur upon
+                              changing of form field values or selections.
+                            </li>
+                            <li>
+                              <strong>3.2.3 Consistent Navigation</strong>
+                              requires that navigation mechanisms remain
+                              consistent throughout a website or application.
+                            </li>
+                            <li>
+                              <strong>3.2.4 Consistent Identification</strong>
+                              mandates that user interface components are
+                              consistently labeled and identified across a
+                              system, helping users recognize their functions
+                              more easily.
+                            </li>
+                            <li>
+                              <strong>3.2.6 Consistent Help</strong> requires
+                              that help information and support mechanisms are
+                              consistently provided across a system, ensuring
+                              users can easily find assistance.
+                            </li>
+                          </ul>
+
+                          <strong>Guideline 2.2 - Enough Time</strong> ensures
+                          that users have sufficient time to read and interact
+                          with content.
+                          <ul class="inner-list">
+                            <li>
+                              <strong>2.2.1 Timing Adjustable</strong> requires
+                              that any time limits can be adjusted or extended,
+                              allowing users to have adequate time to complete
+                              tasks based on their individual needs.
+                            </li>
+                            <li>
+                              <strong>2.2.2 Pause, Stop, Hide</strong> requires
+                              users to be able to pause, stop, or hide moving
+                              content, allowing them to control their viewing
+                              experience.
+                              <ul class="inner-list">
+                                <li>
+                                  <strong
+                                    >2.2.2-blinking-moving-scrolling</strong
+                                  >
+                                  requires that users can pause, stop, or hide
+                                  content that blinks, moves, or scrolls,
+                                  ensuring they can manage distractions and
+                                  focus.
+                                </li>
+                                <li>
+                                  <strong>2.2.2-auto-updating</strong> mandates
+                                  that users can pause, stop, or hide content
+                                  that updates automatically, allowing them to
+                                  focus on the information.
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2
+                        class="accordion-header"
+                        id="understandableHeadingThree"
+                      >
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#understandableCollapseThree"
+                          aria-expanded="false"
+                          aria-controls="understandableCollapseThress"
+                        >
+                          <strong> Guideline 3.3 - Input Assistance </strong>
+                        </button>
+                      </h2>
+                      <div
+                        id="understandableCollapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="understandableHeadingThree"
+                        data-bs-parent="#understandable-accordion"
+                      >
+                        <div class="accordion-body">
+                          <strong> Guideline 3.3 - Input Assistance </strong>
+                          ensures users receive support in entering information
+                          accurately through clear labels, instructions, and
+                          error identification.
+                          <ul class="inner-list">
+                            <li>
+                              <strong>3.3.1 Error Identification</strong>
+                              mandates that errors are clearly identified and
+                              described when they occur, ensuring users are
+                              aware of issues and can take corrective action.
+                            </li>
+                            <li>
+                              <strong>3.3.2 Labels or Instructions</strong>
+                              requires that all form elements include clear
+                              labels or instructions, helping users understand
+                              how to interact with them and improving
+                              accessibility.
+                              <ul class="inner-list">
+                                <li>
+                                  <strong>3.3.2-label-provided</strong> mandates
+                                  that all form elements have clear and
+                                  descriptive labels, ensuring users can easily
+                                  understand the purpose of each field for
+                                  better accessibility.
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <strong>3.3.3 Error Suggestion</strong> requires
+                              that when users make errors, the system provides
+                              suggestions for corrections, helping them easily
+                              rectify mistakes and enhancing overall usability.
+                            </li>
+                            <li>
+                              <strong
+                                >3.3.4 Error Prevention (Legal, Financial,
+                                Data)</strong
+                              >
+                              requires that users are prompted to confirm
+                              actions that could have consequences, such as
+                              legal, financial, or data-related transactions.
+                            </li>
+                            <li>
+                              <strong>3.3.6 Error Prevention (All, AAA)</strong>
+                              mandates that users are provided with options to
+                              review and confirm inputs before final submission,
+                              helping prevent errors in critical tasks.
+                            </li>
+                            <li>
+                              <strong
+                                >3.3.8 Accessible Authentication
+                                (Minimum)</strong
+                              >
+                              requires accessible authentication methods,
+                              including CAPTCHA alternatives and clear labeling
+                              of required information.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div
@@ -1061,59 +1396,90 @@ open_in_new
                       target="_blank"
                       href="https://www.w3.org/WAI/WCAG22/quickref/?versions=2.2&currentsidebar=%23col_overview#principle4"
                       ><span class="material-symbols-outlined small-icon">
-open_in_new
-</span></i
-                    ></a>
+                        open_in_new
+                      </span></a
+                    >
                   </h2>
+                  <div class="accordion mb-3 mt-3" id="robust-accordion">
+                    <div class="accordion-item">
+                      <h2
+                        class="accordion-header"
+                        id="understandableHeadingOne"
+                      >
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#robustCollapseOne"
+                          aria-expanded="true"
+                          aria-controls="robustCollapseOne"
+                        >
+                          <strong> Guideline 4.1 - Compatible </strong>
+                        </button>
+                      </h2>
+                      <div
+                        id="robustCollapseOne"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="robustHeadingOne"
+                        data-bs-parent="#robust-accordion"
+                      >
+                        <div class="accordion-body">
+                          <strong> Guideline 4.1 - Compatible </strong> ensures
+                          that user interface components and content are
+                          compatible with assistive technologies, enabling
+                          reliable interpretation and interaction.
+                          <ul class="inner-list">
+                            <li>
+                              <strong>4.1.2 Name, Role, Value</strong> mandates
+                              that all user interface components have
+                              programmatically determined names, roles, and
+                              values.
+                              <ul class="inner-list">
+                                <li>
+                                  <strong> Frame-title</strong> requires that
+                                  all frame elements have a title attribute,
+                                  ensuring users and assistive technologies can
+                                  understand the purpose of the content within
+                                  the frame.
+                                </li>
+                                <li>
+                                  <strong> Iframe-name</strong> mandates that
+                                  all iframe elements have a title attribute,
+                                  providing context to users and assistive
+                                  technologies about the content within the
+                                  iframe.
+                                </li>
+                                <li>
+                                  <strong> Change-notify-auto</strong> requires
+                                  that users are automatically informed of
+                                  changes in content or context, ensuring that
+                                  assistive technologies can alert them.
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <strong>4.1.3 Status Messages</strong> requires
+                              that status changes are programmatically
+                              communicated to users, ensuring assistive
+                              technologies can announce important updates.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <ul
                     style="list-style-type: disclosure-closed"
                     class="complaince-list"
-                  >
-                    <li>
-                      <strong> Guideline 4.1 - Compatible </strong> ensures that
-                      user interface components and content are compatible with
-                      assistive technologies, enabling reliable interpretation
-                      and interaction.
-                      <ul class="inner-list">
-                        <li>
-                          <strong>4.1.2 Name, Role, Value</strong> mandates that
-                          all user interface components have programmatically
-                          determined names, roles, and values.
-                          <ul class="inner-list">
-                            <li>
-                              <strong> Frame-title</strong> requires that all
-                              frame elements have a title attribute, ensuring
-                              users and assistive technologies can understand
-                              the purpose of the content within the frame.
-                            </li>
-                            <li>
-                              <strong> Iframe-name</strong> mandates that all
-                              iframe elements have a title attribute, providing
-                              context to users and assistive technologies about
-                              the content within the iframe.
-                            </li>
-                            <li>
-                              <strong> Change-notify-auto</strong> requires that
-                              users are automatically informed of changes in
-                              content or context, ensuring that assistive
-                              technologies can alert them.
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <strong>4.1.3 Status Messages</strong> requires that
-                          status changes are programmatically communicated to
-                          users, ensuring assistive technologies can announce
-                          important updates.
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                  ></ul>
                 </div>
               </div>
             </div>
             <div class="bottom-list">
-              <a href="#scroll-top"><span class="material-symbols-outlined">arrow_circle_up</span>Scroll Up</a>
+              <a href="#scroll-top"
+                ><span class="material-symbols-outlined">arrow_circle_up</span
+                >Scroll Up</a
+              >
             </div>
           </section>
         </div>
