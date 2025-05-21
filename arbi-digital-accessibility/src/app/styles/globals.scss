@@ -1,16 +1,138 @@
-/* Example global styles */
+@use "../styles/colors.scss" as *;
+@use "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-roboto-slab);
+}
+.bodyWrapper {
+  background-color: $body-bg;
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: purple;
-  }
-  
-  a {
-    color: #0070f3;
+  font-size: 1.6rem;
+  line-height: 25px;
+}
+
+a {
+  padding: 1px 6px;
+  &:focus {
+    outline: 2px dotted;
+    outline-offset: 1.2px;
+    outline-color: $link-color;
+    color: $white !important;
+    background-color: $link-color;
+    padding: 1px 6px;
     text-decoration: none;
+    border-radius: 2px;
   }
-  
-  h1{
-    font-size: 50px;
+}
+
+.icon-color {
+  color: $icon-color;
+}
+.red-color {
+  color: $tamarillo;
+}
+.bg-color {
+  background-color: $primary-color;
+}
+.link-color-blue {
+  color: $shakespeare;
+  &:hover {
+    color: $tamarillo;
   }
+}
+.mainContent {
+  padding-left: 310px;
+  padding-top: 80px;
+  width: 100%;
+  padding-right: 30px;
+}
+
+.sub-title {
+  font-weight: 600;
+  font-size: 2.5rem;
+  background-image: none;
+  margin: 15px 0;
+  a {
+    color: $link-blue-color;
+    display: flex;
+    text-decoration: none;
+    align-self: center;
+  }
+}
+
+.plainText,
+.complainceList {
+  font-size: 1.8rem;
+  line-height: 35px;
+}
+
+.importantNote {
+  border: 1px solid $iron-color;
+  border-left: 4px solid $iron-color;
+  background: $porcelain;
+  padding: 14px;
+  margin-bottom: 20px;
+}
+.filledAccordion {
+  padding: 10px 0;
+  .accordionInner {
+    border: 1px solid $shakespeare !important;
+    border-radius: 0 !important;
+    background-color: $polar !important;
+    margin-bottom: 15px;
+    width: 100%;
+
+    button {
+      padding: 10px;
+    }
+    span {
+      color: $primary-color;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+ul.innerList {
+  list-style-type: disc;
+  padding-left: 20px;
+  li {
+    padding-top: 6px;
+    &:last-child {
+      padding-top: 6px;
+      padding-bottom: 5px;
+    }
+    ul.innerList {
+      list-style-type: circle;
+      padding-left: 20px;
+    }
+  }
+}
+
+pre {
+  scrollbar-width: thin;
+  scrollbar-color: #4b5563 #1f2937;
+}
+
+.large-heading {
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 40px;
+}
+.back-link {
+  background-color: #fff;
+  color: black;
+  border-radius: 4px;
+  padding: 8px 15px;
+  border: 1px solid #dadde1;
+  background-color: #4CB3D4;
+  cursor: pointer;
+}

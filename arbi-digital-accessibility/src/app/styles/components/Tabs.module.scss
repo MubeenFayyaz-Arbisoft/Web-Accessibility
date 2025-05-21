@@ -1,0 +1,27 @@
+@use "../colors" as *;
+.tabsContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  .tabsLinks{
+    background-color: #f5f6f7;
+    padding: 12px;
+    gap: 15px;
+    border: 1px solid #dadde1;
+    display: flex;
+    button{
+      padding: 10px 20px;
+      border: 1px solid $border-color;
+      width: 100%;
+      font-size: 2rem;
+      font-weight: 700;
+      cursor: pointer;
+      border-radius: 0;
+      &:focus{
+        outline: 2px dotted;
+        outline-offset: 1.2px;
+        outline-color: $link-color;
+      }
+    }
+  }
+}

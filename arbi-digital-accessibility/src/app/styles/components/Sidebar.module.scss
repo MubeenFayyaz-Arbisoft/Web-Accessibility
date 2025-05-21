@@ -1,0 +1,46 @@
+@use "../colors" as *;
+
+.sidebar {
+  background-color: $white;
+  top: 0;
+  max-width: 280px;
+  min-width: 280px;
+  height: 100vh;
+  position: fixed;
+  border-right: 1px solid $border-color;
+  padding: 20px;
+  z-index: 1;
+  .logo {
+    padding-bottom: 12px;
+  }
+  .demoLabel {
+    color: $primary-color;
+    margin: 8px 0;
+    display: block;
+    width: max-content;
+    border-radius: 6px 6px 0 0;
+    font-size: 1.4rem;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    span{
+      font-size: 2rem;
+    }
+  }
+  .sidebarNotification{
+    background-color: $body-bg;
+    border-radius: 8px;
+    padding: 10px;
+    color: $icon-color;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: auto;
+  }
+  .sidebarMenuWrap{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 100%;
+  }
+}

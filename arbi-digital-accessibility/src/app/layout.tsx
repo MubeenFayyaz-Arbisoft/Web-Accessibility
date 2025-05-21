@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "@/app/styles/globals.scss"
-
+import Head from "next/head";
+import { Geist, Roboto_Slab } from "next/font/google";
+import "@/app/styles/globals.scss";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Sidebar from "./components/Sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const roboto_Slab = Roboto_Slab({
+  variable: "--font-roboto-slab",
   subsets: ["latin"],
 });
 
@@ -25,8 +28,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <body className={`${roboto_Slab.variable}`}>
+        <div className="bodyWrapper" id="main-content">
+          <Navbar />
+          <div className="mainWrapper d-flex">
+            <Sidebar />
+              <main className="mainContent">
+                {children}
+              </main>
+              <Footer />
+          </div>
+        </div>
       </body>
     </html>
   );

@@ -1,0 +1,17 @@
+@use "../colors" as *;
+
+// searchField design
+.searchField {
+  padding: 4px 10px;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 1.4rem;
+  padding-left: 40px;
+  color: black;
+  &:focus {
+    outline-offset: 1px;
+    outline-color: #9b2318;
+  }
+
+}

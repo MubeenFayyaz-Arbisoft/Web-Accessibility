@@ -1,0 +1,85 @@
+@use '../colors' as *;
+
+.internalMainNav {
+    margin-left: 280px;
+    border-bottom: 1px solid $border-color;
+    padding: 16px 25px;
+    background-color: $white;
+    position: fixed;
+    width: calc(100% - 280px);
+    top: 0;
+z-index: 1;
+    .logo {
+      &__image {
+        width: 180px;
+      }
+      &:focus {
+        background-color: transparent;
+      }
+    }
+  
+    .navContainer  {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+
+    }
+    nav {
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0;
+  
+        gap: 10px;
+        margin-bottom: 0;
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 500;
+            letter-spacing: 0.6px;
+            line-height: 26px;
+            border: 1px solid $border-color;
+            padding: 6px 10px;
+            border-radius: 4px;
+            &:hover,
+            &:focus {
+              background-color: $link-color;
+              text-decoration: none;
+              color: $white;
+            }
+            &.active {
+              background-color: $link-color;
+              outline: 2px dotted;
+              outline-offset: 2px;
+              outline-color: $link-color;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+    .skipContent {
+        position: absolute;
+        top: -60px;
+        z-index: 1;
+        color: $primary-color;
+        opacity: 0;
+        text-decoration: none;
+        border: 1px solid $border-color;
+        border-radius: 4px;
+        &:focus {
+          opacity: 1;
+          top: 8px;
+        }
+        &:focus-visible {
+          opacity: 1;
+        }
+        &:hover {
+          opacity: 1;
+        }
+      }
+  }

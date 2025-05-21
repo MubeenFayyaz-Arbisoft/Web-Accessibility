@@ -1,0 +1,27 @@
+@use "../colors" as *;
+
+.accordionWrap {
+  border: 1px solid $border-color;
+  margin-bottom: 5px;
+  button[aria-expanded="true"] {
+  border-bottom: 1px solid $border-color;
+
+}
+  .accordionTitle {
+    font-size: 1.6rem;
+    padding: 10px;
+    font-weight: 500;
+    color: $primary-color;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+  }
+  .accordionContent {
+    padding: 10px 20px;
+  }
+  svg {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+}

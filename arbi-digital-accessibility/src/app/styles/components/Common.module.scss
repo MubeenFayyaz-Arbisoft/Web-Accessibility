@@ -1,0 +1,49 @@
+@use "../colors" as *;
+
+.demoFigure {
+  margin: 15px 0;
+  .demoImage {
+    border-radius: 4px 4px 0 0;
+    padding: 15px;
+    width: 100%;
+    height: 250px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin-top: 15px;
+    border: 1px solid $border-color;
+    border-bottom: 0;
+  }
+  .figCaption {
+    font-size: 16px;
+    display: flex;
+    font-family: ui-monospace;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    background-color: #f5f6f7;
+    border-radius: 0 0 4px 4px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid $border-color;
+  }
+}
+
+.codeSnippet {
+  border: 1px solid #dadde1;
+  position: relative;
+  overflow: auto;
+  border-radius: 4px;
+  margin: 15px 0;
+  .labelWrapper {
+    background-color: #f5f6f7;
+    border-bottom: 1px solid #dadde1;
+    padding: 15px;
+  }
+  .preCodeSinppet{
+    scrollbar-width: thin;
+    scrollbar-color: #4b5563 #1f2937;
+    word-break: break-all;
+    white-space: pre-wrap;
+    padding: 15px;
+  }
+}
